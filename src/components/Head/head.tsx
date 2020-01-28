@@ -8,7 +8,7 @@ const Head = () => {
   return (
     <Container>
       <Grid container className={classes.container} alignContent="center">
-        <Grid item md={6} sm={12}>
+        <Grid item lg={6} md={12} sm={6}>
           <div className={classes.text}>
             <h1>
               Hi! My name is Aigars, I am front end developer and I’m looking
@@ -17,7 +17,7 @@ const Head = () => {
           </div>
           <button className={classes.button}>Contact me</button>
         </Grid>
-        <Grid item md={6} xs={12}>
+        <Grid item lg={6} md={12} xs={12}>
           <div className={classes.imageContainer}>
             <img className={classes.image} src={main_img} alt="programmer" />
           </div>

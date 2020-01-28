@@ -17,34 +17,39 @@ const Projects = () => {
   }, []);
   return (
     <Container>
-      <Grid container direction="row" xs={12} alignItems="center">
-        <Grid container justify="center" spacing={4}>
-          {repositories &&
-            repositories.map(repo => {
-              return (
-                <Grid item lg={3} sm={6} xs={12} alignContent="center">
-                  <Paper className={classes.paper}>
-                    <div className={classes.content}>
-                      <img
-                        src={repo.images[1]}
-                        className={classes.image}
-                        alt="screenshot"
-                      />
-                      <ListItem>
-                        <ListItemText primary={repo.name} />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemText primary={repo.language} />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemText primary={repo.code} />
-                      </ListItem>
-                    </div>
-                  </Paper>
-                </Grid>
-              );
-            })}
-        </Grid>
+      <Grid
+        container
+        direction="row"
+        alignItems="center"
+        justify="center"
+        spacing={4}
+        alignContent="center"
+      >
+        {repositories &&
+          repositories.map((repo, index) => {
+            return (
+              <Grid key={index} item lg={3} sm={6} xs={12}>
+                <Paper className={classes.paper}>
+                  <div className={classes.content}>
+                    <img
+                      src={repo.images[1]}
+                      className={classes.image}
+                      alt="screenshot"
+                    />
+                    <ListItem>
+                      <ListItemText primary={repo.name} />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText primary={repo.language} />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText primary={repo.code} />
+                    </ListItem>
+                  </div>
+                </Paper>
+              </Grid>
+            );
+          })}
       </Grid>
     </Container>
   );

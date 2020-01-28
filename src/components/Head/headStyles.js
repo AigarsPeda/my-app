@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     fontWeight: "900",
     margin: "0"
   },
-  "@media (min-width:780px)": {
+  "@media (min-width:1400px)": {
     text: {
       marginTop: "5rem"
     }
@@ -41,6 +41,7 @@ const useStyles = makeStyles({
     bottom: 0,
     left: "50%",
     marginLeft: "-20px",
+    marginTop: "2rem",
     marginBottom: "2rem",
     width: "40px",
     height: "40px",
