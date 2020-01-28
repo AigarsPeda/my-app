@@ -21,6 +21,9 @@ const Head = () => {
           <img className={classes.image} src={main_img} alt="programmer" />
         </div>
       </Grid>
+      <span className={classes.arrow}>
+        <i className="fas fa-chevron-down"></i>
+      </span>
     </Grid>
   );
 };

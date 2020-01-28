@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   container: {
     width: "100%",
+    height: "100vh",
+    marginTop: "10rem",
     padding: "40px"
   },
   text: {
@@ -31,7 +33,29 @@ const useStyles = makeStyles({
   image: {
     maxWidth: "100%",
     height: "auto"
+  },
+  arrow: {
+    backgroundColor: "transparent",
+    position: "absolute",
+    bottom: 10,
+    left: "50%",
+    marginLeft: "-20px",
+    width: "40px",
+    height: "40px",
+    fontSize: 40,
+    animation: `$bounce 1s infinite`
+  },
+  "@keyframes bounce": {
+    "0%, 20%, 50%, 80%, 100%": {
+      transform: "translateY(0)"
+    },
+    "40%": {
+      opacity: 1,
+      transform: "translateY(-30px)"
+    },
+    "60%": {
+      transform: "translateY(-15px)"
+    }
   }
 });
-
 export default useStyles;

@@ -6,7 +6,7 @@ type Repositories = {
   website: string;
   language: string;
   library: string;
-  images: Images[];
+  images: Images;
 };
 
 type Images = {
