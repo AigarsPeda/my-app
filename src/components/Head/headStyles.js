@@ -24,6 +24,7 @@ const useStyles = makeStyles({
     height: 48,
     padding: "0 50px",
     marginTop: "3rem",
+    marginBottom: "3rem",
     fontSize: "25px",
     fontWeight: "600"
   },

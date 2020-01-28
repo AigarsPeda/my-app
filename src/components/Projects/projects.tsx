@@ -37,13 +37,16 @@ const Projects = () => {
                       alt="screenshot"
                     />
                     <ListItem>
-                      <ListItemText primary={repo.name} />
+                      <ListItemText primary={repo.name} secondary="Name" />
                     </ListItem>
                     <ListItem>
-                      <ListItemText primary={repo.language} />
+                      <ListItemText
+                        primary={repo.language}
+                        secondary="Language"
+                      />
                     </ListItem>
                     <ListItem>
-                      <ListItemText primary={repo.code} />
+                      <ListItemText primary={repo.code} secondary="Code" />
                     </ListItem>
                   </div>
                 </Paper>
