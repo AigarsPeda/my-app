@@ -20,15 +20,16 @@ const Projects = () => {
       <Grid
         container
         direction="row"
-        alignItems="center"
-        justify="center"
-        spacing={4}
-        alignContent="center"
+        //alignItems="center"
+        //justify="center"
+        spacing={10}
+        className={classes.container}
+        //alignContent="center"
       >
         {repositories &&
           repositories.map((repo, index) => {
             return (
-              <Grid key={index} item lg={3} sm={6} xs={12}>
+              <Grid key={index} item lg={4} sm={6} xs={12}>
                 <Paper className={classes.paper}>
                   <div className={classes.content}>
                     <img

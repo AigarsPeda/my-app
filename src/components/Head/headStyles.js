@@ -12,6 +12,9 @@ const useStyles = makeStyles({
   "@media (min-width:1400px)": {
     text: {
       marginTop: "5rem"
+    },
+    arrow: {
+      marginBottom: "3rem"
     }
   },
   heading: {},
@@ -43,7 +46,7 @@ const useStyles = makeStyles({
     left: "50%",
     marginLeft: "-20px",
     marginTop: "2rem",
-    marginBottom: "2rem",
+    marginBottom: "0.5rem",
     width: "40px",
     height: "40px",
     fontSize: 40,
@@ -54,8 +57,7 @@ const useStyles = makeStyles({
       transform: "translateY(0)"
     },
     "40%": {
-      opacity: 1,
-      transform: "translateY(-30px)"
+      transform: "translateY(-25px)"
     },
     "60%": {
       transform: "translateY(-15px)"
