@@ -16,7 +16,7 @@ const Head = () => {
         </div>
         <button className={classes.button}>Contact me</button>
       </Grid>
-      <Grid item md={6} sm={12} className={classes.blue}>
+      <Grid item md={6} sm={12}>
         <div className={classes.imageContainer}>
           <img className={classes.image} src={main_img} alt="programmer" />
         </div>

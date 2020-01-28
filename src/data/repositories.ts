@@ -1,6 +1,6 @@
-export const repositories = [
+export const data: Repositories[] = [
   {
-    name: "mezi",
+    name: "meži",
     code: "https://github.com/AigarsPeda/mezi",
     website: "https://aigarspeda.github.io/mezi/",
     language: "TypeScript",

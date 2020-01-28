@@ -2,12 +2,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   container: {
-    // backgroundColor: "red",
     width: "100%",
     padding: "40px"
-  },
-  blue: {
-    backgroundColor: "blue"
   },
   text: {
     marginTop: "5rem",
@@ -30,7 +26,7 @@ const useStyles = makeStyles({
     fontWeight: "600"
   },
   imageContainer: {
-    maxWidth: "750px"
+    maxWidth: "100%"
   },
   image: {
     maxWidth: "100%",
