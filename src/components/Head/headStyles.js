@@ -2,17 +2,17 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   container: {
-    width: "100%",
-    height: "100vh",
-    marginTop: "10rem",
-    padding: "40px"
+    height: "100vh"
   },
   text: {
-    marginTop: "5rem",
-    fontSize: "30px",
+    fontSize: "20px",
     fontWeight: "900",
-    lineHeight: "75px",
-    marginRight: "3rem"
+    margin: "0"
+  },
+  "@media (min-width:780px)": {
+    text: {
+      marginTop: "5rem"
+    }
   },
   heading: {},
   button: {
@@ -32,14 +32,16 @@ const useStyles = makeStyles({
   },
   image: {
     maxWidth: "100%",
-    height: "auto"
+    height: "auto",
+    marginTop: "1.5rem"
   },
   arrow: {
     backgroundColor: "transparent",
     position: "absolute",
-    bottom: 10,
+    bottom: 0,
     left: "50%",
     marginLeft: "-20px",
+    marginBottom: "2rem",
     width: "40px",
     height: "40px",
     fontSize: 40,

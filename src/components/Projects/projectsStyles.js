@@ -1,24 +1,20 @@
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles(
   createStyles({
     root: {
       flexGrow: 1
     },
     container: {
-      width: "100%",
-      padding: "40px",
-      backgroundColor: "red"
+      height: "100vh"
     },
     paper: {
-      display: "flex",
-      flexDirection: "column"
+      borderRadius: "27px",
+      background: "linear-gradient(145deg, #09062e, #070527)",
+      boxShadow: "9px 9px 20px #030211,-9px -9px 20px #0d0a45"
     },
     content: {
       flex: "1 1 auto",
-      backgroundColor: "blue",
-      textOverflow: "ellipsis",
-      overflow: "hidden",
       wordWrap: "break-word"
     },
     image: {
