@@ -63,3 +63,10 @@ type Competences = {
   computerSkillsAndCompetences: string;
   additionalInformation: string;
 };
+
+type MainText = {
+  eng: {
+    text: string;
+    button: string;
+  };
+};
