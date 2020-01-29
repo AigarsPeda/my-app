@@ -65,6 +65,16 @@ type Competences = {
 };
 
 type MainText = {
+  eng: Language;
+  lv: Language;
+};
+
+type Language = {
+  text: string;
+  button: string;
+};
+
+type EngLanguage = {
   eng: {
     text: string;
     button: string;

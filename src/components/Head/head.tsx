@@ -3,24 +3,24 @@ import main_img from "../../assets/main_img.png";
 import { Grid, Container } from "@material-ui/core";
 import useStyles from "./headStyles";
 
-import { mainText } from "../../data/text";
-
 interface IHead {
   refProp: React.MutableRefObject<HTMLDivElement | undefined>;
   scrollToRef: (ref: any) => void;
+  text: Language | undefined;
+  language: string;
 }
 
 const Head: React.FC<IHead> = props => {
-  const { refProp, scrollToRef } = props;
+  const { refProp, scrollToRef, language, text } = props;
   const classes = useStyles();
   return (
     <Container>
       <Grid container className={classes.container}>
         <Grid item lg={6} md={12} xs={12}>
           <div className={classes.text}>
-            <h1>{mainText.eng.text}</h1>
+            <h1>{text?.text}</h1>
           </div>
-          <button className={classes.button}>{mainText.eng.button}</button>
+          <button className={classes.button}>{text?.button}</button>
         </Grid>
         <Grid item lg={6} md={12} xs={12}>
           <div className={classes.imageContainer}>

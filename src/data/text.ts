@@ -3,5 +3,9 @@ export const mainText: MainText = {
     text:
       "Hi! My name is Aigars, I am front end developer and I’m looking for a job",
     button: "Contact me"
+  },
+  lv: {
+    text: `Čau! Mani sauc Aigars, es esmu "front end" istrādātājs un es meklēju darbu`,
+    button: "Sazinies ar mani"
   }
 };
