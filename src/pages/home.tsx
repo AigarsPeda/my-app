@@ -16,6 +16,10 @@ const Home = () => {
     }
   }, [language]);
 
+  const changeLanguage = () => {
+    setLanguage(language === "eng" ? "" : "eng");
+  };
+
   const scrollToRef = (ref: any) => window.scrollTo(0, ref.current.offsetTop);
 
   return (
@@ -23,8 +27,8 @@ const Home = () => {
       <Head
         refProp={myRef}
         scrollToRef={scrollToRef}
-        language={language}
         text={text}
+        changeLanguage={changeLanguage}
       />
       <Projects refProp={myRef} />
     </div>
