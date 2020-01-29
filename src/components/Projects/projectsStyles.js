@@ -21,6 +21,9 @@ const useStyles = makeStyles(
       width: "100%",
       height: "auto"
     },
+    backupText: {
+      color: "#304269"
+    },
     secondaryText: {
       color: "#FF8E53",
       fontSize: "12px"

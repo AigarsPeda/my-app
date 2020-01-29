@@ -3,6 +3,7 @@
   box-sizing: border-box;
   color: #ffff;
   background-color: #08062b;
+  scroll-behavior: smooth;
 }
 
 body {

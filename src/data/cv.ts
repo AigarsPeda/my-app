@@ -1,4 +1,4 @@
-export const contacts = {
+export const contacts: Contacts = {
   name: "Aigars Peda",
   phone: "+73126478706",
   email: "aigarspeda@gmail.com",
@@ -6,7 +6,7 @@ export const contacts = {
   github: "https://github.com/AigarsPeda"
 };
 
-export const workExperience = {
+export const workExperience: WorkExperience = {
   work1: {
     date: "06/206 - Present",
     position: "Assistant Prosecutor",
@@ -19,7 +19,7 @@ export const workExperience = {
   }
 };
 
-export const educationAndTraining = {
+export const educationAndTraining: EducationAndTraining = {
   school1: {
     date: "12/2018 - 02/2019",
     qualification: "Programming Basics (JavaScript, Java, C#)",
@@ -37,7 +37,7 @@ export const educationAndTraining = {
   }
 };
 
-export const competences = {
+export const competences: Competences = {
   languageSpoken: "Latvian",
   otherLanguages: `English (Understanding: Independent User (B2)/Speaking/Writing: Basic User (B1))
   Russian Understanding: Independent User (B2)/Speaking/Writing: Basic User (B2))

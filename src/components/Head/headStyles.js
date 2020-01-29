@@ -40,6 +40,7 @@ const useStyles = makeStyles({
     marginTop: "1.5rem"
   },
   arrow: {
+    cursor: "pointer",
     backgroundColor: "transparent",
     position: "absolute",
     bottom: 0,

@@ -8,7 +8,12 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { data } from "../../data/repositories";
 import useStyles from "./projectsStyles";
 
-const Projects = () => {
+interface IProject {
+  refProp: React.MutableRefObject<null>;
+}
+
+const Projects: React.FC<IProject> = props => {
+  const { refProp } = props;
   const [repositories, setRepositories] = useState<Repositories[]>();
   const classes = useStyles();
 
@@ -16,7 +21,7 @@ const Projects = () => {
     setRepositories(data);
   }, []);
   return (
-    <Container>
+    <Container ref={refProp}>
       <Grid
         container
         direction="row"
@@ -47,7 +52,15 @@ const Projects = () => {
                     </ListItem>
                     <ListItem>
                       <ListItemText
-                        primary={repo.library.length ? repo.library : "None"}
+                        primary={
+                          repo.library.length ? (
+                            repo.library
+                          ) : (
+                            <Typography className={classes.backupText}>
+                              None
+                            </Typography>
+                          )
+                        }
                         secondary={
                           <Typography className={classes.secondaryText}>
                             Library
@@ -79,7 +92,13 @@ const Projects = () => {
                       >
                         <ListItemText
                           primary={
-                            repo.website.length ? repo.website : "Not deployed"
+                            repo.website.length ? (
+                              repo.website
+                            ) : (
+                              <Typography className={classes.backupText}>
+                                Not deployed
+                              </Typography>
+                            )
                           }
                           secondary={
                             <Typography className={classes.secondaryText}>
