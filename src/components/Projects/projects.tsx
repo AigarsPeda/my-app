@@ -10,7 +10,7 @@ import useStyles from "./projectsStyles";
 interface IProject {
   refProp: React.MutableRefObject<HTMLDivElement | undefined>;
   repositories: Repositories[] | undefined;
-  secondary: DataLanguage | undefined;
+  secondary: DataLanguage;
 }
 
 const Projects: React.FC<IProject> = props => {
@@ -58,7 +58,7 @@ const Projects: React.FC<IProject> = props => {
                         primary={repo.language}
                         secondary={
                           <Typography className={classes.secondaryText}>
-                            {secondary?.language}
+                            {secondary.language}
                           </Typography>
                         }
                       />
@@ -70,13 +70,13 @@ const Projects: React.FC<IProject> = props => {
                             repo.library
                           ) : (
                             <Typography className={classes.backupText}>
-                              {secondary?.none}
+                              {secondary.none}
                             </Typography>
                           )
                         }
                         secondary={
                           <Typography className={classes.secondaryText}>
-                            {secondary?.library}
+                            {secondary.library}
                           </Typography>
                         }
                       />
@@ -91,7 +91,7 @@ const Projects: React.FC<IProject> = props => {
                           primary={repo.code}
                           secondary={
                             <Typography className={classes.secondaryText}>
-                              {secondary?.code}
+                              {secondary.code}
                             </Typography>
                           }
                         />
@@ -109,13 +109,13 @@ const Projects: React.FC<IProject> = props => {
                               repo.website
                             ) : (
                               <Typography className={classes.backupText}>
-                                {secondary?.notDeployed}
+                                {secondary.notDeployed}
                               </Typography>
                             )
                           }
                           secondary={
                             <Typography className={classes.secondaryText}>
-                              {secondary?.website}
+                              {secondary.website}
                             </Typography>
                           }
                         />

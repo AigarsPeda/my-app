@@ -6,8 +6,15 @@ import Projects from "../components/Projects/projects";
 
 const Home = () => {
   const [repositories, setRepositories] = useState<Repositories[]>();
-  const [text, setText] = useState<Language>();
-  const [secondary, setSecondary] = useState<DataLanguage>();
+  const [text, setText] = useState<Language>({ text: "", button: "" });
+  const [secondary, setSecondary] = useState<DataLanguage>({
+    language: "",
+    none: "",
+    library: "",
+    code: "",
+    notDeployed: "",
+    website: ""
+  });
   const [language, setLanguage] = useState("eng");
   const myRef = useRef<HTMLDivElement>();
 
