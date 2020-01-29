@@ -2,7 +2,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   container: {
-    height: "100vh"
+    height: "100vh",
+    marginTop: "5%"
   },
   text: {
     fontSize: "20px",
@@ -10,6 +11,9 @@ const useStyles = makeStyles({
     margin: "0"
   },
   "@media (min-width:1400px)": {
+    container: {
+      marginTop: "15%"
+    },
     text: {
       marginTop: "5rem"
     },

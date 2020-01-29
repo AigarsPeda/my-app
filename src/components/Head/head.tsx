@@ -15,7 +15,7 @@ const Head: React.FC<IHead> = props => {
   const classes = useStyles();
   return (
     <Container>
-      <Grid container className={classes.container} alignContent="center">
+      <Grid container className={classes.container}>
         <Grid item lg={6} md={12} xs={12}>
           <div className={classes.text}>
             <h1>{mainText.eng.text}</h1>

@@ -4,6 +4,7 @@
   color: #ffff;
   background-color: #08062b;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
