@@ -27,6 +27,26 @@ const useStyles = makeStyles(
     secondaryText: {
       color: "#FF8E53",
       fontSize: "12px"
+    },
+    fadeInSection: {
+      opacity: 0,
+      visibility: "hidden"
+    },
+    isVisible: {
+      opacity: 1,
+      transform: "none",
+      visibility: "visible",
+      animation: `$fadeInDown 1.2s `
+    },
+    "@keyframes fadeInDown": {
+      "0%": {
+        opacity: 0,
+        transform: "translateY(15vh)"
+      },
+      "100%": {
+        opacity: 1,
+        transform: "translateY(0)"
+      }
     }
   })
 );

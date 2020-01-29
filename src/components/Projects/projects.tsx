@@ -9,19 +9,33 @@ import { data } from "../../data/repositories";
 import useStyles from "./projectsStyles";
 
 interface IProject {
-  refProp: React.MutableRefObject<null>;
+  refProp: React.MutableRefObject<HTMLDivElement | undefined>;
 }
 
 const Projects: React.FC<IProject> = props => {
   const { refProp } = props;
   const [repositories, setRepositories] = useState<Repositories[]>();
+  const [isVisible, setVisible] = useState(true);
   const classes = useStyles();
 
   useEffect(() => {
     setRepositories(data);
-  }, []);
+
+    const node = refProp.current;
+
+    if (node) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => setVisible(entry.isIntersecting));
+      });
+      observer.observe(node);
+      return () => observer.unobserve(node);
+    }
+  }, [refProp]);
   return (
-    <Container ref={refProp}>
+    <Container
+      ref={refProp}
+      className={isVisible ? classes.isVisible : classes.fadeInSection}
+    >
       <Grid
         container
         direction="row"

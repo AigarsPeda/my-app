@@ -6,7 +6,7 @@ import useStyles from "./headStyles";
 import { mainText } from "../../data/text";
 
 interface IHead {
-  refProp: React.MutableRefObject<null>;
+  refProp: React.MutableRefObject<HTMLDivElement | undefined>;
   scrollToRef: (ref: any) => void;
 }
 

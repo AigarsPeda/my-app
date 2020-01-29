@@ -3,7 +3,7 @@ import Head from "../components/Head/head";
 import Projects from "../components/Projects/projects";
 
 const Home = () => {
-  const myRef = useRef(null);
+  const myRef = useRef<HTMLDivElement>();
   const scrollToRef = (ref: any) => window.scrollTo(0, ref.current.offsetTop);
 
   return (
