@@ -16,3 +16,7 @@ body {
 i {
   background: transparent;
 }
+
+a {
+  text-decoration: none;
+}

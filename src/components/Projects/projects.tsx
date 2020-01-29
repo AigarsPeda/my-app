@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Grid, Container } from "@material-ui/core";
+import { Grid, Container, Typography } from "@material-ui/core";
 import Paper from "@material-ui/core/Paper";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -20,11 +20,8 @@ const Projects = () => {
       <Grid
         container
         direction="row"
-        //alignItems="center"
-        //justify="center"
         spacing={10}
         className={classes.container}
-        //alignContent="center"
       >
         {repositories &&
           repositories.map((repo, index) => {
@@ -37,17 +34,60 @@ const Projects = () => {
                       className={classes.image}
                       alt="screenshot"
                     />
-                    <ListItem>
-                      <ListItemText primary={repo.name} secondary="Name" />
-                    </ListItem>
+
                     <ListItem>
                       <ListItemText
                         primary={repo.language}
-                        secondary="Language"
+                        secondary={
+                          <Typography className={classes.secondaryText}>
+                            Language
+                          </Typography>
+                        }
                       />
                     </ListItem>
                     <ListItem>
-                      <ListItemText primary={repo.code} secondary="Code" />
+                      <ListItemText
+                        primary={repo.library.length ? repo.library : "None"}
+                        secondary={
+                          <Typography className={classes.secondaryText}>
+                            Library
+                          </Typography>
+                        }
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <a
+                        href={repo.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ListItemText
+                          primary={repo.code}
+                          secondary={
+                            <Typography className={classes.secondaryText}>
+                              Code
+                            </Typography>
+                          }
+                        />
+                      </a>
+                    </ListItem>
+                    <ListItem>
+                      <a
+                        href={repo.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ListItemText
+                          primary={
+                            repo.website.length ? repo.website : "Not deployed"
+                          }
+                          secondary={
+                            <Typography className={classes.secondaryText}>
+                              Website
+                            </Typography>
+                          }
+                        />
+                      </a>
                     </ListItem>
                   </div>
                 </Paper>

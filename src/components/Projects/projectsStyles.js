@@ -20,6 +20,10 @@ const useStyles = makeStyles(
     image: {
       width: "100%",
       height: "auto"
+    },
+    secondaryText: {
+      color: "#FF8E53",
+      fontSize: "12px"
     }
   })
 );
