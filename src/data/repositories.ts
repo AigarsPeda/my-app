@@ -104,3 +104,22 @@ export const data: Repositories[] = [
     }
   }
 ];
+
+export const dataText: DataText = {
+  eng: {
+    language: "Language",
+    none: "None",
+    library: "Library",
+    code: "Code",
+    notDeployed: "Not deployed",
+    website: "Website"
+  },
+  lv: {
+    language: "Valoda",
+    none: "Neviena",
+    library: "Bibliotēka",
+    code: "Kods",
+    notDeployed: "Nav publicēta",
+    website: "Vietne"
+  }
+};

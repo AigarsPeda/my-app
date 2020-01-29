@@ -1,18 +1,25 @@
 import React, { useRef, useState, useEffect } from "react";
 import { mainText } from "../data/text";
+import { data, dataText } from "../data/repositories";
 import Head from "../components/Head/head";
 import Projects from "../components/Projects/projects";
 
 const Home = () => {
+  const [repositories, setRepositories] = useState<Repositories[]>();
   const [text, setText] = useState<Language>();
+  const [secondary, setSecondary] = useState<DataLanguage>();
   const [language, setLanguage] = useState("eng");
   const myRef = useRef<HTMLDivElement>();
 
   useEffect(() => {
+    setRepositories(data);
+
     if (language === "eng") {
       setText(mainText.eng);
+      setSecondary(dataText.eng);
     } else {
       setText(mainText.lv);
+      setSecondary(dataText.lv);
     }
   }, [language]);
 
@@ -30,7 +37,11 @@ const Home = () => {
         text={text}
         changeLanguage={changeLanguage}
       />
-      <Projects refProp={myRef} />
+      <Projects
+        refProp={myRef}
+        repositories={repositories}
+        secondary={secondary}
+      />
     </div>
   );
 };

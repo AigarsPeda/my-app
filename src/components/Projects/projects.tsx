@@ -5,22 +5,20 @@ import Paper from "@material-ui/core/Paper";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
-import { data } from "../../data/repositories";
 import useStyles from "./projectsStyles";
 
 interface IProject {
   refProp: React.MutableRefObject<HTMLDivElement | undefined>;
+  repositories: Repositories[] | undefined;
+  secondary: DataLanguage | undefined;
 }
 
 const Projects: React.FC<IProject> = props => {
-  const { refProp } = props;
-  const [repositories, setRepositories] = useState<Repositories[]>();
+  const { refProp, repositories, secondary } = props;
   const [isVisible, setVisible] = useState(true);
   const classes = useStyles();
 
   useEffect(() => {
-    setRepositories(data);
-
     const node = refProp.current;
 
     if (node) {
@@ -31,6 +29,7 @@ const Projects: React.FC<IProject> = props => {
       return () => observer.unobserve(node);
     }
   }, [refProp]);
+
   return (
     <Container
       ref={refProp}
@@ -59,7 +58,7 @@ const Projects: React.FC<IProject> = props => {
                         primary={repo.language}
                         secondary={
                           <Typography className={classes.secondaryText}>
-                            Language
+                            {secondary?.language}
                           </Typography>
                         }
                       />
@@ -71,13 +70,13 @@ const Projects: React.FC<IProject> = props => {
                             repo.library
                           ) : (
                             <Typography className={classes.backupText}>
-                              None
+                              {secondary?.none}
                             </Typography>
                           )
                         }
                         secondary={
                           <Typography className={classes.secondaryText}>
-                            Library
+                            {secondary?.library}
                           </Typography>
                         }
                       />
@@ -92,7 +91,7 @@ const Projects: React.FC<IProject> = props => {
                           primary={repo.code}
                           secondary={
                             <Typography className={classes.secondaryText}>
-                              Code
+                              {secondary?.code}
                             </Typography>
                           }
                         />
@@ -110,13 +109,13 @@ const Projects: React.FC<IProject> = props => {
                               repo.website
                             ) : (
                               <Typography className={classes.backupText}>
-                                Not deployed
+                                {secondary?.notDeployed}
                               </Typography>
                             )
                           }
                           secondary={
                             <Typography className={classes.secondaryText}>
-                              Website
+                              {secondary?.website}
                             </Typography>
                           }
                         />

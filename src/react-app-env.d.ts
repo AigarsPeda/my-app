@@ -74,9 +74,16 @@ type Language = {
   button: string;
 };
 
-type EngLanguage = {
-  eng: {
-    text: string;
-    button: string;
-  };
+type DataText = {
+  eng: DataLanguage;
+  lv: DataLanguage;
+};
+
+type DataLanguage = {
+  language: string;
+  none: string;
+  library: string;
+  code: string;
+  notDeployed: string;
+  website: string;
 };
