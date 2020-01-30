@@ -5,6 +5,7 @@ import { contactsData } from "../data/cv";
 import Head from "../components/Head/head";
 import Projects from "../components/Projects/projects";
 import Contacts from "../components/Contacts/contacts";
+import NavBar from "../components/Navbar/navbar";
 
 const Home = () => {
   const [repositories, setRepositories] = useState<Repositories[]>();
@@ -17,7 +18,7 @@ const Home = () => {
     notDeployed: "",
     website: ""
   });
-  const [language, setLanguage] = useState("eng");
+  const [language, setLanguage] = useState("ENG");
   const [contacts, setContacts] = useState<Contacts>();
   const myRef = useRef<HTMLDivElement>();
 
@@ -25,7 +26,7 @@ const Home = () => {
     setRepositories(data);
     setContacts(contactsData);
 
-    if (language === "eng") {
+    if (language === "ENG") {
       setText(mainText.eng);
       setSecondary(dataText.eng);
     } else {
@@ -35,19 +36,15 @@ const Home = () => {
   }, [language]);
 
   const changeLanguage = () => {
-    setLanguage(language === "eng" ? "" : "eng");
+    setLanguage(language === "ENG" ? "LV" : "ENG");
   };
 
   const scrollToRef = (ref: any) => window.scrollTo(0, ref.current.offsetTop);
 
   return (
     <div>
-      <Head
-        refProp={myRef}
-        scrollToRef={scrollToRef}
-        text={text}
-        changeLanguage={changeLanguage}
-      />
+      <NavBar changeLanguage={changeLanguage} language={language} />
+      <Head refProp={myRef} scrollToRef={scrollToRef} text={text} />
       <Projects
         refProp={myRef}
         repositories={repositories}

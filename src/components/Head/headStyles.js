@@ -3,16 +3,29 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles({
   container: {
     height: "100vh",
-    marginTop: "5%"
+    marginTop: "10px"
   },
   text: {
     fontSize: "20px",
     fontWeight: "900",
     margin: "0"
   },
-  "@media (min-width:1280px)": {
+
+  //MONITORS
+  "@media (min-width:1275px)": {
     container: {
-      marginTop: "15%"
+      marginTop: "100px",
+      paddingTop: "150px"
+    },
+    text: {
+      marginTop: "5rem"
+    }
+  },
+
+  //IPADPRO
+  "@media (min-width:1020px)": {
+    container: {
+      marginTop: "0px"
     },
     text: {
       marginTop: "5rem"
@@ -32,15 +45,20 @@ export const useStyles = makeStyles({
     marginTop: "3rem",
     marginBottom: "3rem",
     fontSize: "25px",
-    fontWeight: "600"
+    fontWeight: "600",
+    alignItems: "center",
+    "@media (min-width:1280px)": {
+      padding: "0 50px"
+      //width: "100%"
+    }
   },
   imageContainer: {
     maxWidth: "100%"
   },
   image: {
     maxWidth: "100%",
-    height: "auto",
-    marginTop: "1.5rem"
+    height: "auto"
+    //marginTop: "1.5rem"
   },
   arrow: {
     cursor: "pointer",

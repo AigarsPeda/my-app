@@ -7,18 +7,16 @@ interface IHead {
   refProp: React.MutableRefObject<HTMLDivElement | undefined>;
   text: Language;
   scrollToRef: (ref: any) => void;
-  changeLanguage: () => void;
 }
 
 const Head: React.FC<IHead> = props => {
-  const { refProp, scrollToRef, changeLanguage, text } = props;
+  const { refProp, scrollToRef, text } = props;
   const classes = useStyles();
   return (
     <Container>
       <Grid container className={classes.container}>
         <Grid item lg={6} md={12} xs={12}>
           <div className={classes.text}>
-            <button onClick={changeLanguage}>ES TE!</button>
             <h1>{text.text}</h1>
           </div>
           <button className={classes.button}>{text.button}</button>

@@ -1,13 +1,26 @@
 import React from "react";
 import Home from "./pages/home";
 
+import { makeStyles } from "@material-ui/core/styles";
+
 import { Container } from "@material-ui/core";
 
+const useStyles = makeStyles({
+  root: {
+    color: "#ffff",
+    backgroundColor: "#08062b",
+    width: "100%"
+  }
+});
+
 const App: React.FC = () => {
+  const classes = useStyles();
   return (
-    <Container>
-      <Home />
-    </Container>
+    <div className={classes.root}>
+      <Container>
+        <Home />
+      </Container>
+    </div>
   );
 };
 

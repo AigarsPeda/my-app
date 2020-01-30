@@ -2,7 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   color: #ffff;
-  background-color: #08062b;
+  /* background-color: #08062b; */
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
