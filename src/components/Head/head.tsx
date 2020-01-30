@@ -5,12 +5,13 @@ import { useStyles } from "./headStyles";
 
 interface IHead {
   refProp: React.MutableRefObject<HTMLDivElement | undefined>;
+  contactRef: React.MutableRefObject<HTMLDivElement | undefined>;
   text: Language;
   scrollToRef: (ref: any) => void;
 }
 
 const Head: React.FC<IHead> = props => {
-  const { refProp, scrollToRef, text } = props;
+  const { refProp, scrollToRef, contactRef, text } = props;
   const classes = useStyles();
   return (
     <Container>
@@ -19,7 +20,12 @@ const Head: React.FC<IHead> = props => {
           <div className={classes.text}>
             <h1>{text.text}</h1>
           </div>
-          <button className={classes.button}>{text.button}</button>
+          <button
+            className={classes.button}
+            onClick={() => scrollToRef(contactRef)}
+          >
+            {text.button}
+          </button>
         </Grid>
         <Grid item lg={6} md={12} xs={12}>
           <div className={classes.imageContainer}>

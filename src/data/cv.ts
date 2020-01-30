@@ -1,9 +1,26 @@
 export const contactsData: Contacts = {
   name: "Aigars Peda",
-  phone: "+731 26478706",
+  phone: "+371 26478706",
   email: "aigarspeda@gmail.com",
   date: "22.06.1984.",
   github: "https://github.com/AigarsPeda"
+};
+
+export const contactsLabel = {
+  eng: {
+    name: "name",
+    phone: "phone",
+    email: "email",
+    date: "date",
+    github: "github"
+  },
+  lv: {
+    name: "vārds",
+    phone: "telefons",
+    email: "e-pasts",
+    date: "dzimšanas datums",
+    github: "github"
+  }
 };
 
 export const workExperience: WorkExperience = {

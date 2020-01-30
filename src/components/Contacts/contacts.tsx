@@ -11,13 +11,15 @@ import { useStyles } from "./contactsStyles";
 
 interface IContacts {
   contacts: Contacts | undefined;
+  label: Label;
+  contactRef: React.MutableRefObject<HTMLDivElement | undefined>;
 }
 
 const Contacts: React.FC<IContacts> = props => {
-  const { contacts } = props;
+  const { contacts, label, contactRef } = props;
   const classes = useStyles();
   return (
-    <Container className={classes.root}>
+    <Container className={classes.root} ref={contactRef}>
       <Grid
         container
         spacing={0}
@@ -33,7 +35,7 @@ const Contacts: React.FC<IContacts> = props => {
                 primary={contacts?.email}
                 secondary={
                   <Typography className={classes.secondaryText}>
-                    E-mail
+                    {label.email}
                   </Typography>
                 }
               />
@@ -43,7 +45,7 @@ const Contacts: React.FC<IContacts> = props => {
                 primary={contacts?.phone}
                 secondary={
                   <Typography className={classes.secondaryText}>
-                    Phone
+                    {label.phone}
                   </Typography>
                 }
               />

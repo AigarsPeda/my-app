@@ -87,3 +87,16 @@ type DataLanguage = {
   notDeployed: string;
   website: string;
 };
+
+type ContactsLabel = {
+  eng: Label;
+  lv: Label;
+};
+
+type Label = {
+  name: string;
+  phone: string;
+  email: string;
+  date: string;
+  github: string;
+};
