@@ -18,6 +18,7 @@ interface IContacts {
 const Contacts: React.FC<IContacts> = props => {
   const { contacts, label, contactRef } = props;
   const classes = useStyles();
+
   return (
     <Container className={classes.root} ref={contactRef}>
       <Grid
@@ -32,7 +33,11 @@ const Contacts: React.FC<IContacts> = props => {
           <Paper className={classes.paper}>
             <ListItem>
               <ListItemText
-                primary={contacts?.email}
+                primary={
+                  <a href="mailto:aigarspeda@gmail.com.com">
+                    {contacts?.email}
+                  </a>
+                }
                 secondary={
                   <Typography className={classes.secondaryText}>
                     {label.email}
