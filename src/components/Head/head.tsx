@@ -1,7 +1,7 @@
 import React from "react";
 import main_img from "../../assets/main_img.png";
 import { Grid, Container } from "@material-ui/core";
-import useStyles from "./headStyles";
+import { useStyles } from "./headStyles";
 
 interface IHead {
   refProp: React.MutableRefObject<HTMLDivElement | undefined>;

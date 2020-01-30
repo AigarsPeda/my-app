@@ -1,6 +1,6 @@
-export const contacts: Contacts = {
+export const contactsData: Contacts = {
   name: "Aigars Peda",
-  phone: "+73126478706",
+  phone: "+731 26478706",
   email: "aigarspeda@gmail.com",
   date: "22.06.1984.",
   github: "https://github.com/AigarsPeda"

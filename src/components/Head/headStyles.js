@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+export const useStyles = makeStyles({
   container: {
     height: "100vh",
     marginTop: "5%"
@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     fontWeight: "900",
     margin: "0"
   },
-  "@media (min-width:1400px)": {
+  "@media (min-width:1280px)": {
     container: {
       marginTop: "15%"
     },
@@ -21,7 +21,6 @@ const useStyles = makeStyles({
       marginBottom: "3rem"
     }
   },
-  heading: {},
   button: {
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
     border: 0,
@@ -69,4 +68,3 @@ const useStyles = makeStyles({
     }
   }
 });
-export default useStyles;

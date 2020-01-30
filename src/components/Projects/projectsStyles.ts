@@ -1,25 +1,26 @@
-import { makeStyles, createStyles } from "@material-ui/core/styles";
+import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(
+export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1
     },
-    container: {
-      marginTop: "2rem"
+    grid: {
+      minHeight: "100vh"
     },
     paper: {
+      textAlign: "center",
+      padding: theme.spacing(1),
       borderRadius: "27px",
+      color: "#ffff",
       background: "linear-gradient(145deg, #09062e, #070527)",
       boxShadow: "9px 9px 20px #030211,-9px -9px 20px #0d0a45"
     },
-    content: {
-      flex: "1 1 auto",
-      wordWrap: "break-word"
-    },
     image: {
       width: "100%",
-      height: "auto"
+      height: "auto",
+      borderTopRightRadius: "18px",
+      borderTopLeftRadius: "18px"
     },
     backupText: {
       color: "#304269"
@@ -50,5 +51,3 @@ const useStyles = makeStyles(
     }
   })
 );
-
-export default useStyles;

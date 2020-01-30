@@ -1,8 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import { mainText } from "../data/text";
 import { data, dataText } from "../data/repositories";
+import { contactsData } from "../data/cv";
 import Head from "../components/Head/head";
 import Projects from "../components/Projects/projects";
+import Contacts from "../components/Contacts/contacts";
 
 const Home = () => {
   const [repositories, setRepositories] = useState<Repositories[]>();
@@ -16,10 +18,12 @@ const Home = () => {
     website: ""
   });
   const [language, setLanguage] = useState("eng");
+  const [contacts, setContacts] = useState<Contacts>();
   const myRef = useRef<HTMLDivElement>();
 
   useEffect(() => {
     setRepositories(data);
+    setContacts(contactsData);
 
     if (language === "eng") {
       setText(mainText.eng);
@@ -49,6 +53,7 @@ const Home = () => {
         repositories={repositories}
         secondary={secondary}
       />
+      <Contacts contacts={contacts} />
     </div>
   );
 };
