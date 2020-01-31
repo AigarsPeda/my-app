@@ -109,7 +109,7 @@ export const dataText: DataText = {
   eng: {
     language: "Language",
     none: "None",
-    library: "Library",
+    library: "Library / Framework",
     code: "Code",
     notDeployed: "Not deployed",
     website: "Website"
