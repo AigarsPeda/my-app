@@ -6,7 +6,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/mezi/master/screenshots/1.jpg",
+      1: "https://raw.githubusercontent.com/AigarsPeda/mezi/master/screenshots/3.jpg",
       2: "https://raw.githubusercontent.com/AigarsPeda/mezi/master/screenshots/2.jpg",
       3: "https://raw.githubusercontent.com/AigarsPeda/mezi/master/screenshots/3.jpg",
       4: "https://raw.githubusercontent.com/AigarsPeda/mezi/master/screenshots/4.jpg"
