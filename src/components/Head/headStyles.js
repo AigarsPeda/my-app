@@ -63,7 +63,8 @@ export const useStyles = makeStyles({
   },
   arrow: {
     cursor: "pointer",
-    backgroundColor: "transparent",
+    display: "block",
+    // backgroundColor: "red",
     // position: "absolute",
     textAlign: "center",
     bottom: 0,
@@ -72,7 +73,7 @@ export const useStyles = makeStyles({
     marginRight: "auto",
     // marginTop: "-3rem",
     marginBottom: "0.5rem",
-    width: "40px",
+    width: "100%",
     height: "40px",
     fontSize: 40,
     animation: `$bounce 1s infinite`
