@@ -54,7 +54,8 @@ export const useStyles = makeStyles({
     }
   },
   imageContainer: {
-    maxWidth: "100%"
+    maxWidth: "100%",
+    display: "block"
   },
   image: {
     maxWidth: "100%",
