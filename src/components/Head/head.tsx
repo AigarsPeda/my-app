@@ -16,20 +16,19 @@ const Head: React.FC<IHead> = props => {
   return (
     <Container>
       <Grid container className={classes.container}>
-        <Grid item lg={6} md={12} xs={12}>
-          <div style={{ display: "block" }}>
-            <div className={classes.text}>
-              <h1>{text.text}</h1>
-            </div>
-            <button
-              className={classes.button}
-              onClick={() => scrollToRef(contactRef)}
-            >
-              {text.button}
-            </button>
+        <Grid item lg={6} md={6} sm={6} xs={12}>
+          <div className={classes.text}>
+            <h1>{text.text}</h1>
           </div>
+          <button
+            className={classes.button}
+            onClick={() => scrollToRef(contactRef)}
+          >
+            {text.button}
+          </button>
         </Grid>
-        <Grid item lg={6} md={12} xs={12}>
+
+        <Grid item lg={6} md={6} sm={6} xs={12}>
           <div className={classes.imageContainer}>
             <img className={classes.image} src={main_img} alt="programmer" />
           </div>

@@ -2,7 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles({
   container: {
-    height: "100vh",
     marginTop: "10px"
   },
   text: {
@@ -15,7 +14,8 @@ export const useStyles = makeStyles({
   "@media (min-width:1275px)": {
     container: {
       marginTop: "100px",
-      paddingTop: "150px"
+      paddingTop: "150px",
+      height: "100vh"
     },
     text: {
       marginTop: "5rem"
@@ -28,7 +28,10 @@ export const useStyles = makeStyles({
       marginTop: "0px"
     },
     text: {
-      marginTop: "5rem"
+      // marginTop: "5rem",
+      marginRight: "2rem",
+      marginBottom: "2rem",
+      marginLeft: "0.6rem"
     }
   },
   button: {
