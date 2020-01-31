@@ -30,8 +30,8 @@ export const useStyles = makeStyles({
     text: {
       // marginTop: "5rem",
       marginRight: "2rem",
-      marginBottom: "2rem",
-      marginLeft: "0.6rem"
+      marginBottom: "2rem"
+      // marginLeft: "0.6rem"
     }
   },
   button: {
