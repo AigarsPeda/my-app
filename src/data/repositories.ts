@@ -1,15 +1,15 @@
 export const data: Repositories[] = [
   {
-    name: "meži",
-    code: "https://github.com/AigarsPeda/mezi",
-    website: "https://aigarspeda.github.io/mezi/",
+    name: "wood",
+    code: "https://github.com/AigarsPeda/wood",
+    website: "https://aigarspeda.github.io/wood/",
     language: "TypeScript",
     library: "React",
     images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/mezi/master/screenshots/3.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/mezi/master/screenshots/2.jpg",
-      3: "https://raw.githubusercontent.com/AigarsPeda/mezi/master/screenshots/3.jpg",
-      4: "https://raw.githubusercontent.com/AigarsPeda/mezi/master/screenshots/4.jpg"
+      1: "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/3.jpg",
+      2: "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/1.jpg",
+      3: "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/2.jpg",
+      4: "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/4.jpg"
     }
   },
   {
