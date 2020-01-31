@@ -29,9 +29,6 @@ export const useStyles = makeStyles({
     },
     text: {
       marginTop: "5rem"
-    },
-    arrow: {
-      marginBottom: "3rem"
     }
   },
   button: {
@@ -64,7 +61,7 @@ export const useStyles = makeStyles({
   },
   arrow: {
     cursor: "pointer",
-    display: "block",
+    display: "none",
     // backgroundColor: "red",
     // position: "absolute",
     textAlign: "center",
@@ -77,7 +74,10 @@ export const useStyles = makeStyles({
     width: "100%",
     height: "40px",
     fontSize: 40,
-    animation: `$bounce 1s infinite`
+    animation: `$bounce 1s infinite`,
+    "@media (min-width:1020px)": {
+      display: "block"
+    }
   },
   "@keyframes bounce": {
     "0%, 20%, 50%, 80%, 100%": {
