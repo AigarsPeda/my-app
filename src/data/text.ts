@@ -5,7 +5,7 @@ export const mainText: MainText = {
     button: "Contact me"
   },
   lv: {
-    text: `Čau! Mani sauc Aigars, es esmu "front end" iztrādātājs un es meklēju darbu`,
+    text: `Čau! Mani sauc Aigars, un es meklēju front end izstrādātāja darbu.`,
     button: "Sazinies ar mani"
   }
 };
