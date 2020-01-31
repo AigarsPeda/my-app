@@ -6,7 +6,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1
     },
     grid: {
-      minHeight: "100vh"
+      minHeight: "100vh",
+      marginTop: "0.5rem"
     },
     paper: {
       textAlign: "center",
@@ -35,6 +36,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     isVisible: {
       opacity: 1,
+
       transform: "none",
       visibility: "visible",
       animation: `$fadeInDown 1.2s `
