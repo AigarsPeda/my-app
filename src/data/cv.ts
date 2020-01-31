@@ -1,3 +1,5 @@
+//contacts
+
 export const contactsData: Contacts = {
   name: "Aigars Peda",
   phone: "+371 26478706",
