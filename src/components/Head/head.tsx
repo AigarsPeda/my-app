@@ -32,12 +32,12 @@ const Head: React.FC<IHead> = props => {
             <img className={classes.image} src={main_img} alt="programmer" />
           </div>
         </Grid>
-        <span className={classes.arrow}>
+        <div className={classes.arrow}>
           <i
             className="fas fa-chevron-down"
             onClick={() => scrollToRef(refProp)}
           />
-        </span>
+        </div>
       </Grid>
     </Container>
   );
