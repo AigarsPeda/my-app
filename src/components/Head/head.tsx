@@ -1,5 +1,6 @@
 import React from "react";
-import main_img from "../../assets/main_img.png";
+//import main_img from "../../assets/main_img.png";
+import Programmer1 from "../../assets/programmer1.svg";
 import { Grid, Container } from "@material-ui/core";
 import { useStyles } from "./headStyles";
 
@@ -30,7 +31,7 @@ const Head: React.FC<IHead> = props => {
 
         <Grid item lg={6} md={6} sm={6} xs={12}>
           <div className={classes.imageContainer}>
-            <img className={classes.image} src={main_img} alt="programmer" />
+            <img className={classes.image} src={Programmer1} alt="programmer" />
           </div>
         </Grid>
         <div className={classes.arrow}>

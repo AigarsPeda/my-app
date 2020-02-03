@@ -28,10 +28,8 @@ export const useStyles = makeStyles({
       marginTop: "0px"
     },
     text: {
-      // marginTop: "5rem",
       marginRight: "2rem",
       marginBottom: "2rem"
-      // marginLeft: "0.6rem"
     }
   },
   button: {
@@ -50,7 +48,6 @@ export const useStyles = makeStyles({
     alignItems: "center",
     "@media (min-width:1280px)": {
       padding: "0 50px"
-      //width: "100%"
     }
   },
   imageContainer: {
@@ -58,15 +55,13 @@ export const useStyles = makeStyles({
     display: "block"
   },
   image: {
-    maxWidth: "100%",
-    height: "auto"
-    //marginTop: "1.5rem"
+    width: "100%",
+    height: "auto",
+    transform: "scale(1.3)"
   },
   arrow: {
     cursor: "pointer",
     display: "none",
-    // backgroundColor: "red",
-    // position: "absolute",
     textAlign: "center",
     bottom: 0,
     left: "50%",
