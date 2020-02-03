@@ -12,6 +12,6 @@ You will also see any lint errors in the console.
 
 ### screenshots
 
-![screenshots](/src/screenshots/1.png)
-![screenshots](/src/screenshots/2.png)
-![screenshots](/src/screenshots/3.png)
+![screenshots](/screenshots/1.jpg)
+![screenshots](/screenshots/2.png)
+![screenshots](/screenshots/3.png)
