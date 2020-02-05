@@ -11,6 +11,10 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     paper: {
       textAlign: "center",
+      paddingRight: "5px",
+      wordBreak: "break-word",
+      overflowWrap: "anywhere",
+      //overflow: "hidden",
       padding: theme.spacing(1),
       borderRadius: "27px",
       color: "#ffff",

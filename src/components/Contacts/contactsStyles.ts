@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     paper: {
       textAlign: "center",
-      padding: theme.spacing(2, 7),
+      padding: theme.spacing(2, 4),
       "@media (min-width:1280px)": {
         padding: theme.spacing(4, 18)
       },

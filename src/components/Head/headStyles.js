@@ -39,15 +39,18 @@ export const useStyles = makeStyles({
     borderRadius: 3,
     boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
     color: "white",
-    height: 48,
-    padding: "0 50px",
+    //height: 48,
+    width: "100%",
+    padding: "15px 30px",
     marginTop: "3rem",
-    marginBottom: "3rem",
+    marginBottom: "2.5rem",
     fontSize: "25px",
     fontWeight: "600",
     alignItems: "center",
     "@media (min-width:1280px)": {
-      padding: "0 50px"
+      padding: "20px 50px",
+      //height: 48,
+      width: 350
     }
   },
   imageContainer: {
