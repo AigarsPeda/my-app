@@ -31,7 +31,11 @@ const NavBar: React.FC<INavBar> = props => {
       <FormControlLabel
         className={classes.label}
         control={<Switch onChange={changeLanguage} color="primary" />}
-        label={<Typography className={classes.label}>{language}</Typography>}
+        label={
+          <Typography className={classes.label}>
+            {language === "ENG" ? "LV" : "ENG"}
+          </Typography>
+        }
       />
     </div>
   );
