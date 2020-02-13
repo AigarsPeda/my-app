@@ -1,5 +1,18 @@
 export const data: Repositories[] = [
   {
+    name: "arc-dev-website",
+    code: "https://github.com/AigarsPeda/arc-dev-website",
+    website: "",
+    language: "TypeScript",
+    library: "React",
+    images: {
+      1: "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg",
+      2: "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/2.jpg",
+      3: "",
+      4: ""
+    }
+  },
+  {
     name: "wood",
     code: "https://github.com/AigarsPeda/wood",
     website: "https://aigarspeda.github.io/wood/",
