@@ -7,9 +7,7 @@ export const data: Repositories[] = [
     library: "React",
     images: {
       1: "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/2.jpg",
-      3: "",
-      4: ""
+      2: "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/2.jpg"
     }
   },
   {
