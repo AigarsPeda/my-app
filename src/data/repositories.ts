@@ -5,10 +5,10 @@ export const data: Repositories[] = [
     website: "",
     language: "TypeScript",
     library: "React",
-    images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/2.jpg"
-    }
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/2.jpg"
+    ]
   },
   {
     name: "wood",
@@ -16,12 +16,12 @@ export const data: Repositories[] = [
     website: "https://aigarspeda.github.io/wood/",
     language: "TypeScript",
     library: "React",
-    images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/3.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/1.jpg",
-      3: "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/2.jpg",
-      4: "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/4.jpg"
-    }
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/3.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/1.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/2.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/4.jpg"
+    ]
   },
   {
     name: "color-app",
@@ -29,12 +29,12 @@ export const data: Repositories[] = [
     website: "https://color-select-app.herokuapp.com",
     language: "JavaScript",
     library: "React",
-    images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/color-app.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot.png",
-      3: "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot2.png",
-      4: "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot4.png"
-    }
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/color-app.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot.png",
+      "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot2.png",
+      "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot4.png"
+    ]
   },
   {
     name: "todo-react-typescript",
@@ -42,12 +42,9 @@ export const data: Repositories[] = [
     website: "",
     language: "TypeScript",
     library: "React",
-    images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/todo-react-typescript/master/screenshots/todo-react-typescript.jpg",
-      2: "",
-      3: "",
-      4: ""
-    }
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/todo-react-typescript/master/screenshots/todo-react-typescript.jpg"
+    ]
   },
   {
     name: "medium-copy",
@@ -55,12 +52,12 @@ export const data: Repositories[] = [
     website: "",
     language: "JavaScript",
     library: "React",
-    images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/medium-copy.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/screenshot3.png",
-      3: "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/screenshot4.png",
-      4: "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/screenshot1.png"
-    }
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/medium-copy.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/screenshot3.png",
+      "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/screenshot4.png",
+      "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/screenshot1.png"
+    ]
   },
   {
     name: "e-commerce",
@@ -68,12 +65,12 @@ export const data: Repositories[] = [
     website: "https://shop-crwn-live.herokuapp.com/",
     language: "JavaScript",
     library: "React",
-    images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/e-commerce.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot2.png",
-      3: "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot3.png",
-      4: "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot4.png"
-    }
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/e-commerce.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot2.png",
+      "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot3.png",
+      "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot4.png"
+    ]
   },
   {
     name: "face-detection-app",
@@ -81,12 +78,12 @@ export const data: Repositories[] = [
     website: "https://aigars-face-detection.herokuapp.com/",
     language: "JavaScript",
     library: "React",
-    images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/face-detection-app.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/1.png",
-      3: "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/2.png",
-      4: "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/3.png"
-    }
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/face-detection-app.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/1.png",
+      "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/2.png",
+      "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/3.png"
+    ]
   },
   {
     name: "movies-website",
@@ -94,12 +91,12 @@ export const data: Repositories[] = [
     website: "",
     language: "JavaScript",
     library: "",
-    images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/movies-website.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot2.png",
-      3: "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot3.png",
-      4: "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot.png"
-    }
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/movies-website.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot2.png",
+      "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot3.png",
+      "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot.png"
+    ]
   },
   {
     name: "dad-jokes-app",
@@ -107,12 +104,11 @@ export const data: Repositories[] = [
     website: "https://aigarspeda.github.io/dad-jokes-app/",
     language: "JavaScript",
     library: "React",
-    images: {
-      1: "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/dad-jokes-app.jpg",
-      2: "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes.png",
-      3: "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes2.png",
-      4: ""
-    }
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/dad-jokes-app.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes.png",
+      "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes2.png"
+    ]
   }
 ];
 

@@ -9,12 +9,7 @@ type Repositories = {
   images: Images;
 };
 
-type Images = {
-  1: string;
-  2?: string;
-  3?: string;
-  4?: string;
-};
+type Images = string[];
 
 type Contacts = {
   name: string;

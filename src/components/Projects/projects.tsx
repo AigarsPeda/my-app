@@ -42,7 +42,7 @@ const Projects: React.FC<IProject> = props => {
               <Grid key={index} item lg={4} sm={6} xs={12}>
                 <Paper className={classes.paper}>
                   <img
-                    src={repo.images[1]}
+                    src={repo.images[0]}
                     className={classes.image}
                     alt="screenshot"
                   />
