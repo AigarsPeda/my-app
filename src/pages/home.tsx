@@ -6,6 +6,7 @@ import Head from "../components/Head/head";
 import Projects from "../components/Projects/projects";
 import Contacts from "../components/Contacts/contacts";
 import NavBar from "../components/Navbar/navbar";
+import ImageCarousel from "../components/Carousel/ImageCarousel";
 
 const Home = () => {
   const [repositories, setRepositories] = useState<Repositories[]>();
@@ -27,8 +28,21 @@ const Home = () => {
     date: "",
     github: ""
   });
+  const [repoImageList, setRepoImageList] = useState<string[]>();
   const myRef = useRef<HTMLDivElement>();
   const contactRef = useRef<HTMLDivElement>();
+
+  const setRepoImagesById = (id: number) => {
+    repositories?.filter(repo => {
+      if (repo.id === id) {
+        setRepoImageList(repo.images);
+      }
+    });
+  };
+
+  const closeImageCarousel = () => {
+    setRepoImageList(undefined);
+  };
 
   useEffect(() => {
     setRepositories(data);
@@ -64,7 +78,15 @@ const Home = () => {
         refProp={myRef}
         repositories={repositories}
         secondary={secondary}
+        setRepoImagesById={setRepoImagesById}
       />
+      {repoImageList && (
+        <ImageCarousel
+          repoImageList={repoImageList}
+          closeImageCarousel={closeImageCarousel}
+        />
+      )}
+
       <Contacts contacts={contacts} label={label} contactRef={contactRef} />
     </div>
   );

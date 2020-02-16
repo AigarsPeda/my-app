@@ -23,3 +23,12 @@ i {
 a {
   text-decoration: none;
 }
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 30;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 30;
+}

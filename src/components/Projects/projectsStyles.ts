@@ -24,7 +24,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       width: "100%",
       height: "auto",
       borderTopRightRadius: "18px",
-      borderTopLeftRadius: "18px"
+      borderTopLeftRadius: "18px",
+      cursor: "pointer"
     },
     backupText: {
       color: "#304269"

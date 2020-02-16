@@ -1,16 +1,17 @@
 export const data: Repositories[] = [
   {
+    id: 9,
     name: "arc-dev-website",
     code: "https://github.com/AigarsPeda/arc-dev-website",
     website: "",
     language: "TypeScript",
     library: "React",
     images: [
-      "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg",
-      "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/2.jpg"
+      "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg"
     ]
   },
   {
+    id: 8,
     name: "wood",
     code: "https://github.com/AigarsPeda/wood",
     website: "https://aigarspeda.github.io/wood/",
@@ -24,6 +25,7 @@ export const data: Repositories[] = [
     ]
   },
   {
+    id: 7,
     name: "color-app",
     code: "https://github.com/AigarsPeda/color-app",
     website: "https://color-select-app.herokuapp.com",
@@ -37,6 +39,7 @@ export const data: Repositories[] = [
     ]
   },
   {
+    id: 6,
     name: "todo-react-typescript",
     code: "https://github.com/AigarsPeda/todo-react-typescript",
     website: "",
@@ -47,6 +50,7 @@ export const data: Repositories[] = [
     ]
   },
   {
+    id: 5,
     name: "medium-copy",
     code: "https://github.com/AigarsPeda/medium-copy",
     website: "",
@@ -60,6 +64,7 @@ export const data: Repositories[] = [
     ]
   },
   {
+    id: 4,
     name: "e-commerce",
     code: "https://github.com/AigarsPeda/e-commerce",
     website: "https://shop-crwn-live.herokuapp.com/",
@@ -73,6 +78,7 @@ export const data: Repositories[] = [
     ]
   },
   {
+    id: 3,
     name: "face-detection-app",
     code: "https://github.com/AigarsPeda/face-detection-app",
     website: "https://aigars-face-detection.herokuapp.com/",
@@ -86,6 +92,7 @@ export const data: Repositories[] = [
     ]
   },
   {
+    id: 2,
     name: "movies-website",
     code: "https://github.com/AigarsPeda/movies-website",
     website: "",
@@ -99,6 +106,7 @@ export const data: Repositories[] = [
     ]
   },
   {
+    id: 1,
     name: "dad-jokes-app",
     code: "https://github.com/AigarsPeda/dad-jokes-app",
     website: "https://aigarspeda.github.io/dad-jokes-app/",

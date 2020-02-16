@@ -11,10 +11,11 @@ interface IProject {
   refProp: React.MutableRefObject<HTMLDivElement | undefined>;
   repositories: Repositories[] | undefined;
   secondary: DataLanguage;
+  setRepoImagesById: (id: number) => void;
 }
 
 const Projects: React.FC<IProject> = props => {
-  const { refProp, repositories, secondary } = props;
+  const { refProp, repositories, secondary, setRepoImagesById } = props;
   const [isVisible, setVisible] = useState(true);
   const classes = useStyles();
 
@@ -37,14 +38,15 @@ const Projects: React.FC<IProject> = props => {
     >
       <Grid container direction="row" spacing={10} className={classes.grid}>
         {repositories &&
-          repositories.map((repo, index) => {
+          repositories.map(repo => {
             return (
-              <Grid key={index} item lg={4} sm={6} xs={12}>
+              <Grid key={repo.id} item lg={4} sm={6} xs={12}>
                 <Paper className={classes.paper}>
                   <img
                     src={repo.images[0]}
                     className={classes.image}
                     alt="screenshot"
+                    onClick={() => setRepoImagesById(repo.id)}
                   />
 
                   <ListItem>

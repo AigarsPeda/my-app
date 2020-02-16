@@ -1,6 +1,7 @@
 /// <reference types="react-scripts" />
 
 type Repositories = {
+  id: number;
   name: string;
   code: string;
   website: string;
