@@ -1,5 +1,17 @@
 export const data: Repositories[] = [
   {
+    id: 10,
+    name: "food-app",
+    code: "https://github.com/AigarsPeda/food-app/tree/master",
+    website: "",
+    language: "TypeScript",
+    library: "React Native",
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/food-app/master/screenshots/1.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/food-app/master/screenshots/2.jpg"
+    ]
+  },
+  {
     id: 9,
     name: "arc-dev-website",
     code: "https://github.com/AigarsPeda/arc-dev-website",
