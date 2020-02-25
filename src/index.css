@@ -2,7 +2,6 @@
   margin: 0;
   box-sizing: border-box;
   color: #ffff;
-
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
