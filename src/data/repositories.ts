@@ -3,7 +3,7 @@ export const data: Repositories[] = [
     id: 11,
     name: "volleyball-king",
     code: "https://github.com/AigarsPeda/volleyball-king",
-    website: "",
+    website: "https://aigarspeda.github.io/volleyball-king/",
     language: "TypeScript",
     library: "React",
     images: [
