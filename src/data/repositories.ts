@@ -8,6 +8,7 @@ export const data: Repositories[] = [
     library: "React",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/volleyball-king/master/screenshots/1.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/volleyball-king/master/screenshots/4.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/volleyball-king/master/screenshots/2.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/volleyball-king/master/screenshots/3.jpg"
     ]
