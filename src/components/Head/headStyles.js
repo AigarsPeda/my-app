@@ -34,6 +34,7 @@ export const useStyles = makeStyles({
   },
   button: {
     cursor: "pointer",
+    display: "inline-block",
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
     border: 0,
     borderRadius: 50,

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { mainText } from "../data/text";
 import { data, dataText } from "../data/repositories";
 import { contactsData, contactsLabel } from "../data/cv";
@@ -29,8 +29,6 @@ const Home = () => {
     github: ""
   });
   const [repoImageList, setRepoImageList] = useState<string[]>();
-  const myRef = useRef<HTMLDivElement>();
-  const contactRef = useRef<HTMLDivElement>();
 
   const setRepoImagesById = (id: number) => {
     repositories?.filter(repo => {
@@ -63,19 +61,11 @@ const Home = () => {
     setLanguage(language === "ENG" ? "LV" : "ENG");
   };
 
-  const scrollToRef = (ref: any) => window.scrollTo(0, ref.current.offsetTop);
-
   return (
     <div>
       <NavBar changeLanguage={changeLanguage} language={language} />
-      <Head
-        refProp={myRef}
-        contactRef={contactRef}
-        scrollToRef={scrollToRef}
-        text={text}
-      />
+      <Head text={text} />
       <Projects
-        refProp={myRef}
         repositories={repositories}
         secondary={secondary}
         setRepoImagesById={setRepoImagesById}
@@ -87,7 +77,7 @@ const Home = () => {
         />
       )}
 
-      <Contacts contacts={contacts} label={label} contactRef={contactRef} />
+      <Contacts contacts={contacts} label={label} />
     </div>
   );
 };

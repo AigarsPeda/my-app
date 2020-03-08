@@ -12,15 +12,14 @@ import { useStyles } from "./contactsStyles";
 interface IContacts {
   contacts: Contacts | undefined;
   label: Label;
-  contactRef: React.MutableRefObject<HTMLDivElement | undefined>;
 }
 
 const Contacts: React.FC<IContacts> = props => {
-  const { contacts, label, contactRef } = props;
+  const { contacts, label } = props;
   const classes = useStyles();
 
   return (
-    <Container className={classes.root} ref={contactRef}>
+    <Container className={classes.root}>
       <Grid
         container
         spacing={0}
@@ -30,7 +29,7 @@ const Contacts: React.FC<IContacts> = props => {
         className={classes.grid}
       >
         <Grid item lg={6} sm={12}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper} id="sectionContacts">
             <ListItem>
               <ListItemText
                 primary={

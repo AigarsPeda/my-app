@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { Grid, Container, Typography } from "@material-ui/core";
 import Paper from "@material-ui/core/Paper";
@@ -8,35 +8,29 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { useStyles } from "./projectsStyles";
 
 interface IProject {
-  refProp: React.MutableRefObject<HTMLDivElement | undefined>;
+  //refProp: React.MutableRefObject<HTMLDivElement | undefined>;
   repositories: Repositories[] | undefined;
   secondary: DataLanguage;
   setRepoImagesById: (id: number) => void;
 }
 
 const Projects: React.FC<IProject> = props => {
-  const { refProp, repositories, secondary, setRepoImagesById } = props;
+  const { repositories, secondary, setRepoImagesById } = props;
   const [isVisible, setVisible] = useState(true);
   const classes = useStyles();
 
-  useEffect(() => {
-    const node = refProp.current;
-
-    if (node) {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => setVisible(entry.isIntersecting));
-      });
-      observer.observe(node);
-      return () => observer.unobserve(node);
-    }
-  }, [refProp]);
-
   return (
     <Container
-      ref={refProp}
+      //ref={refProp}
       className={isVisible ? classes.isVisible : classes.fadeInSection}
     >
-      <Grid container direction="row" spacing={10} className={classes.grid}>
+      <Grid
+        container
+        direction="row"
+        spacing={10}
+        className={classes.grid}
+        id="repositories"
+      >
         {repositories &&
           repositories.map(repo => {
             return (

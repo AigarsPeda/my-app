@@ -1,18 +1,16 @@
 import React from "react";
-//import main_img from "../../assets/main_img.png";
 import Programmer1 from "../../assets/programmer1.svg";
 import { Grid, Container } from "@material-ui/core";
 import { useStyles } from "./headStyles";
 
+import { Link } from "react-scroll";
+
 interface IHead {
-  refProp: React.MutableRefObject<HTMLDivElement | undefined>;
-  contactRef: React.MutableRefObject<HTMLDivElement | undefined>;
   text: Language;
-  scrollToRef: (ref: any) => void;
 }
 
 const Head: React.FC<IHead> = props => {
-  const { refProp, scrollToRef, contactRef, text } = props;
+  const { text } = props;
   const classes = useStyles();
   return (
     <Container>
@@ -21,12 +19,17 @@ const Head: React.FC<IHead> = props => {
           <div className={classes.text}>
             <h1>{text.text}</h1>
           </div>
-          <button
+          <Link
             className={classes.button}
-            onClick={() => scrollToRef(contactRef)}
+            activeClass="repositories"
+            to="sectionContacts"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
           >
             {text.button}
-          </button>
+          </Link>
         </Grid>
 
         <Grid item lg={6} md={6} sm={6} xs={12}>
@@ -35,10 +38,16 @@ const Head: React.FC<IHead> = props => {
           </div>
         </Grid>
         <div className={classes.arrow}>
-          <i
-            className="fas fa-chevron-down"
-            onClick={() => scrollToRef(refProp)}
-          />
+          <Link
+            activeClass="repositories"
+            to="repositories"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <i className="fas fa-chevron-down" />
+          </Link>
         </div>
       </Grid>
     </Container>
