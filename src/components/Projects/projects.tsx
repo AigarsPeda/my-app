@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Grid, Container, Typography } from "@material-ui/core";
 import Paper from "@material-ui/core/Paper";
@@ -8,7 +8,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { useStyles } from "./projectsStyles";
 
 interface IProject {
-  //refProp: React.MutableRefObject<HTMLDivElement | undefined>;
   repositories: Repositories[] | undefined;
   secondary: DataLanguage;
   setRepoImagesById: (id: number) => void;
@@ -16,14 +15,11 @@ interface IProject {
 
 const Projects: React.FC<IProject> = props => {
   const { repositories, secondary, setRepoImagesById } = props;
-  const [isVisible, setVisible] = useState(true);
+
   const classes = useStyles();
 
   return (
-    <Container
-      //ref={refProp}
-      className={isVisible ? classes.isVisible : classes.fadeInSection}
-    >
+    <Container>
       <Grid
         container
         direction="row"

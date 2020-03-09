@@ -33,6 +33,7 @@ export const useStyles = makeStyles({
     }
   },
   button: {
+    textAlign: "center",
     cursor: "pointer",
     display: "inline-block",
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
@@ -40,7 +41,6 @@ export const useStyles = makeStyles({
     borderRadius: 50,
     boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
     color: "white",
-    //height: 48,
     width: "100%",
     padding: "15px 30px",
     marginTop: "3rem",
@@ -50,8 +50,7 @@ export const useStyles = makeStyles({
     alignItems: "center",
     "@media (min-width:1280px)": {
       padding: "20px 50px",
-      //height: 48,
-      width: 350
+      width: 290
     }
   },
   imageContainer: {
