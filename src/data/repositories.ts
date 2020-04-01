@@ -1,5 +1,18 @@
 export const data: Repositories[] = [
   {
+    id: 12,
+    name: "password-generator",
+    code: "https://github.com/AigarsPeda/password-generator",
+    website: "",
+    language: "TypeScript",
+    library: "React",
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/password-generator/master/screenshots/1.png",
+      "https://raw.githubusercontent.com/AigarsPeda/password-generator/master/screenshots/2.png",
+      "https://raw.githubusercontent.com/AigarsPeda/password-generator/master/screenshots/3.png"
+    ]
+  },
+  {
     id: 11,
     name: "volleyball-king",
     code: "https://github.com/AigarsPeda/volleyball-king",
