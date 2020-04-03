@@ -3,7 +3,7 @@ export const data: Repositories[] = [
     id: 12,
     name: "password-generator",
     code: "https://github.com/AigarsPeda/password-generator",
-    website: "",
+    website: "https://aigarspeda.github.io/password-generator/",
     language: "TypeScript",
     library: "React",
     images: [
