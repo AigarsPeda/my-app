@@ -6,7 +6,7 @@ export const useStyles = makeStyles({
   },
   text: {
     fontSize: "20px",
-    fontWeight: "900",
+    fontWeight: "bold",
     margin: "0"
   },
 
@@ -18,7 +18,8 @@ export const useStyles = makeStyles({
       height: "100vh"
     },
     text: {
-      marginTop: "5rem"
+      marginTop: "5rem",
+      fontWeight: "bold"
     }
   },
 
@@ -29,7 +30,8 @@ export const useStyles = makeStyles({
     },
     text: {
       marginRight: "2rem",
-      marginBottom: "2rem"
+      marginBottom: "2rem",
+      fontWeight: "bold"
     }
   },
   button: {
