@@ -94,16 +94,16 @@ export const data: Repositories[] = [
   },
   {
     id: 5,
-    name: "medium-copy",
-    code: "https://github.com/AigarsPeda/medium-copy",
+    name: "calendar-app",
+    code: "https://github.com/AigarsPeda/calendar-app",
     website: "",
-    language: "JavaScript",
+    language: "TypeScript",
     library: "React",
     images: [
-      "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/medium-copy.jpg",
-      "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/screenshot3.png",
-      "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/screenshot4.png",
-      "https://raw.githubusercontent.com/AigarsPeda/medium-copy/master/src/screenshots/screenshot1.png"
+      "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/1.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/2.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/3.jpg",
+      "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/4.jpg"
     ]
   },
   {
