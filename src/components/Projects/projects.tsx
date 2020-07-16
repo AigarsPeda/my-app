@@ -13,7 +13,7 @@ interface IProject {
   setRepoImagesById: (id: number) => void;
 }
 
-const Projects: React.FC<IProject> = props => {
+const Projects: React.FC<IProject> = (props) => {
   const { repositories, secondary, setRepoImagesById } = props;
 
   const classes = useStyles();
@@ -28,7 +28,7 @@ const Projects: React.FC<IProject> = props => {
         id="repositories"
       >
         {repositories &&
-          repositories.map(repo => {
+          repositories.map((repo) => {
             return (
               <Grid key={repo.id} item lg={4} sm={6} xs={12}>
                 <Paper className={classes.paper}>
@@ -38,75 +38,76 @@ const Projects: React.FC<IProject> = props => {
                     alt="screenshot"
                     onClick={() => setRepoImagesById(repo.id)}
                   />
-
-                  <ListItem>
-                    <ListItemText
-                      primary={repo.language}
-                      secondary={
-                        <Typography className={classes.secondaryText}>
-                          {secondary.language}
-                        </Typography>
-                      }
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText
-                      primary={
-                        repo.library.length ? (
-                          repo.library
-                        ) : (
-                          <Typography className={classes.backupText}>
-                            {secondary.none}
-                          </Typography>
-                        )
-                      }
-                      secondary={
-                        <Typography className={classes.secondaryText}>
-                          {secondary.library}
-                        </Typography>
-                      }
-                    />
-                  </ListItem>
-                  <ListItem>
-                    <a
-                      href={repo.code}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                  <ul className={classes.padding}>
+                    <ListItem>
                       <ListItemText
-                        primary={repo.code}
+                        primary={repo.language}
                         secondary={
                           <Typography className={classes.secondaryText}>
-                            {secondary.code}
+                            {secondary.language}
                           </Typography>
                         }
                       />
-                    </a>
-                  </ListItem>
-                  <ListItem>
-                    <a
-                      href={repo.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    </ListItem>
+                    <ListItem>
                       <ListItemText
                         primary={
-                          repo.website.length ? (
-                            repo.website
+                          repo.library.length ? (
+                            repo.library
                           ) : (
                             <Typography className={classes.backupText}>
-                              {secondary.notDeployed}
+                              {secondary.none}
                             </Typography>
                           )
                         }
                         secondary={
                           <Typography className={classes.secondaryText}>
-                            {secondary.website}
+                            {secondary.library}
                           </Typography>
                         }
                       />
-                    </a>
-                  </ListItem>
+                    </ListItem>
+                    <ListItem>
+                      <a
+                        href={repo.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ListItemText
+                          primary={repo.code}
+                          secondary={
+                            <Typography className={classes.secondaryText}>
+                              {secondary.code}
+                            </Typography>
+                          }
+                        />
+                      </a>
+                    </ListItem>
+                    <ListItem>
+                      <a
+                        href={repo.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ListItemText
+                          primary={
+                            repo.website.length ? (
+                              repo.website
+                            ) : (
+                              <Typography className={classes.backupText}>
+                                {secondary.notDeployed}
+                              </Typography>
+                            )
+                          }
+                          secondary={
+                            <Typography className={classes.secondaryText}>
+                              {secondary.website}
+                            </Typography>
+                          }
+                        />
+                      </a>
+                    </ListItem>
+                  </ul>
                 </Paper>
               </Grid>
             );
