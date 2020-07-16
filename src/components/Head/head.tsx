@@ -42,7 +42,7 @@ const Head: React.FC<IHead> = (props) => {
             <img className={classes.image} src={Programmer1} alt="programmer" />
           </div>
         </Grid>
-        <div className={classes.arrow} aria-label="cards with repository info">
+        <div className={classes.arrow}>
           <Link
             activeClass="repositories"
             to="repositories"
