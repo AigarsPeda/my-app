@@ -47,7 +47,7 @@ const Head: React.FC<IHead> = (props) => {
             offset={-70}
             duration={500}
           >
-            <FaChevronDown />
+            <FaChevronDown aria-label="arrow down" />
           </Link>
         </div>
       </Grid>
