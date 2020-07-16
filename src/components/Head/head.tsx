@@ -17,7 +17,7 @@ const Head: React.FC<IHead> = (props) => {
     <Container>
       <Grid container className={classes.container}>
         <Grid item lg={6} md={6} sm={6} xs={12}>
-          <div className={classes.text}>
+          <div className={classes.text} aria-label="main head line">
             <h1>{text.text}</h1>
           </div>
           <Link
@@ -28,17 +28,21 @@ const Head: React.FC<IHead> = (props) => {
             smooth={true}
             offset={-70}
             duration={500}
+            aria-label="contact me"
           >
             {text.button}
           </Link>
         </Grid>
 
         <Grid item lg={6} md={6} sm={6} xs={12}>
-          <div className={classes.imageContainer}>
+          <div
+            className={classes.imageContainer}
+            aria-label="image of programmer"
+          >
             <img className={classes.image} src={Programmer1} alt="programmer" />
           </div>
         </Grid>
-        <div className={classes.arrow}>
+        <div className={classes.arrow} aria-label="cards with repository info">
           <Link
             activeClass="repositories"
             to="repositories"
