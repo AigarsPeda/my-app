@@ -14,7 +14,7 @@ export const useStyles = makeStyles({
   "@media (min-width:1275px)": {
     container: {
       marginTop: "100px",
-      paddingTop: "95px",
+      paddingTop: "45px",
       height: "100vh",
     },
     text: {
