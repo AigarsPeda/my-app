@@ -4,12 +4,13 @@ import { Grid, Container } from "@material-ui/core";
 import { useStyles } from "./headStyles";
 
 import { Link } from "react-scroll";
+import { FaChevronDown } from "react-icons/fa";
 
 interface IHead {
   text: Language;
 }
 
-const Head: React.FC<IHead> = props => {
+const Head: React.FC<IHead> = (props) => {
   const { text } = props;
   const classes = useStyles();
   return (
@@ -46,7 +47,7 @@ const Head: React.FC<IHead> = props => {
             offset={-70}
             duration={500}
           >
-            <i className="fas fa-chevron-down" />
+            <FaChevronDown />
           </Link>
         </div>
       </Grid>
