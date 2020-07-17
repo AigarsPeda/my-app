@@ -48,7 +48,7 @@ const Head: React.FC<IHead> = (props) => {
             to="repositories"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-10}
             duration={500}
           >
             <FaChevronDown aria-label="arrow down" />

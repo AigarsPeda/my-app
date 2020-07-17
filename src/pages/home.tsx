@@ -17,7 +17,7 @@ const Home = () => {
     library: "",
     code: "",
     notDeployed: "",
-    website: ""
+    website: "",
   });
   const [language, setLanguage] = useState("ENG");
   const [contacts, setContacts] = useState<Contacts>();
@@ -26,12 +26,12 @@ const Home = () => {
     phone: "",
     email: "",
     date: "",
-    github: ""
+    github: "",
   });
   const [repoImageList, setRepoImageList] = useState<string[]>();
 
   const setRepoImagesById = (id: number) => {
-    repositories?.filter(repo => {
+    repositories?.filter((repo) => {
       if (repo.id === id) {
         setRepoImageList(repo.images);
       }
