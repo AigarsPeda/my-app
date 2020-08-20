@@ -7,7 +7,8 @@ export const useStyles = makeStyles({
   text: {
     fontSize: "20px",
     fontWeight: "bold",
-    margin: "0"
+    margin: "0",
+    letterSpacing: "1.5px"
   },
 
   //MONITORS
