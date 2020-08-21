@@ -1,9 +1,13 @@
 import React, { useEffect, useRef } from "react";
-import { TweenMax, Linear } from "gsap";
+import gsap, { TweenMax, Linear } from "gsap";
 
 function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
   const smoke1 = useRef(null);
   const smoke2 = useRef(null);
+
+  gsap.config({
+    nullTargetWarn: false
+  });
 
   useEffect(() => {
     TweenMax.fromTo(
