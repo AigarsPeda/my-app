@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import gsap, { TweenMax, Linear } from "gsap";
+import gsap, { Linear } from "gsap";
 
 function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
   const smoke1 = useRef(null);
@@ -9,19 +9,25 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
     nullTargetWarn: false
   });
 
+  const timeLine = (element: React.MutableRefObject<null>) => {
+    var fa = gsap.timeline();
+
+    fa.to(element.current, 4, {
+      y: -15,
+      ease: Linear.easeIn,
+      opacity: 1
+    });
+    fa.to(element.current, 4, {
+      y: -38,
+      ease: Linear.easeOut,
+      opacity: 0
+    });
+    fa.repeat(-1);
+  };
+
   useEffect(() => {
-    TweenMax.fromTo(
-      smoke1.current,
-      5,
-      { y: 10 },
-      { y: -18, ease: Linear.easeNone, opacity: 0, repeat: -1 }
-    );
-    TweenMax.fromTo(
-      smoke2.current,
-      5,
-      { y: 10 },
-      { y: -22, ease: Linear.easeNone, opacity: 0, repeat: -1 }
-    );
+    timeLine(smoke1);
+    timeLine(smoke2);
   });
 
   return (
@@ -89,11 +95,13 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
         d="M1235.52 1366.86c0 2.903-.801 5.75-2.314 8.228l-14.412 23.589a15.78 15.78 0 01-13.468 7.554h-59.552a15.78 15.78 0 01-13.467-7.554l-14.412-23.589a15.78 15.78 0 01-2.314-8.228v-30.203c0-8.717 7.065-15.782 15.782-15.782h88.375c8.717 0 15.782 7.065 15.782 15.782v30.203z"
       />
       <path
+        style={{ opacity: 0 }}
         ref={smoke1}
         fill="url(#prefix___Linear8)"
         d="M1167.01 1205.97s-5.371 15.12 8.481 33.798c13.853 18.679 10.614 29.317 8.181 36.98-2.67 8.411-4.091 18.891-.828 30.303 0 0 2.845-17.147 15.104-33.939 12.258-16.792-1.255-29.128-9.71-36.514-14.309-12.502-19.511-17.819-21.228-30.628z"
       />
       <path
+        style={{ opacity: 0 }}
         ref={smoke2}
         fill="url(#prefix___Linear9)"
         d="M1164.08 1261.32s5.186 6.802 1.192 18.539c-3.995 11.736-.62 16.61 1.861 20.104 2.725 3.836 5.151 8.925 5.35 15.25 0 0-4.233-8.243-13.188-14.774-8.955-6.53-4.101-14.991-1.011-20.116 5.231-8.675 7.007-12.22 5.796-19.003z"
