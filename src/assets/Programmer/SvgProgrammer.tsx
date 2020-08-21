@@ -9,19 +9,19 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
     nullTargetWarn: false
   });
 
-  const timeLine = (
+  const timeLineFunction = (
     element: React.MutableRefObject<null>,
     delayNumber: number
   ) => {
     var fa = gsap.timeline();
 
-    fa.to(element.current, 4, {
-      y: -15,
+    fa.to(element.current, 1.5, {
+      y: -35,
       ease: Linear.easeIn,
       opacity: 1
     });
-    fa.to(element.current, 4, {
-      y: -38,
+    fa.to(element.current, 2, {
+      y: -95,
       ease: Linear.easeOut,
       opacity: 0
     });
@@ -30,8 +30,8 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
   };
 
   useEffect(() => {
-    timeLine(smoke1, 0);
-    timeLine(smoke2, 1);
+    timeLineFunction(smoke1, 0);
+    timeLineFunction(smoke2, 0.5);
   });
 
   return (
