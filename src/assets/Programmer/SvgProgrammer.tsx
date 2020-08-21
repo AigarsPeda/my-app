@@ -9,7 +9,10 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
     nullTargetWarn: false
   });
 
-  const timeLine = (element: React.MutableRefObject<null>) => {
+  const timeLine = (
+    element: React.MutableRefObject<null>,
+    delayNumber: number
+  ) => {
     var fa = gsap.timeline();
 
     fa.to(element.current, 4, {
@@ -22,12 +25,13 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
       ease: Linear.easeOut,
       opacity: 0
     });
+    fa.delay(delayNumber);
     fa.repeat(-1);
   };
 
   useEffect(() => {
-    timeLine(smoke1);
-    timeLine(smoke2);
+    timeLine(smoke1, 0);
+    timeLine(smoke2, 1);
   });
 
   return (
