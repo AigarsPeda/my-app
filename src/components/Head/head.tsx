@@ -1,12 +1,13 @@
 import React, { useRef, useEffect } from "react";
-import Programmer1 from "../../assets/programmer1.svg";
 import { Grid, Container } from "@material-ui/core";
 import { useStyles } from "./headStyles";
 
+import { TweenMax, Linear } from "gsap";
+
 import { Link } from "react-scroll";
 import { FaChevronDown } from "react-icons/fa";
-import SmokeSVG1 from "../../assets/SmokeSVG/SmokeSVG1";
-import { TweenMax, Linear } from "gsap";
+
+import SvgProgrammer from "../../assets/Programmer/SvgProgrammer";
 
 interface IHead {
   text: Language;
@@ -52,19 +53,7 @@ const Head: React.FC<IHead> = (props) => {
             className={classes.imageContainer}
             aria-label="image of programmer"
           >
-            <img className={classes.image} src={Programmer1} alt="programmer" />
-            <div
-              ref={smoke1}
-              style={{
-                width: "10px",
-                height: "auto",
-                position: "absolute",
-                top: "36%",
-                left: "63.5%"
-              }}
-            >
-              <SmokeSVG1 />
-            </div>
+            <SvgProgrammer className={classes.image} />
           </div>
         </Grid>
         <div className={classes.arrow}>
