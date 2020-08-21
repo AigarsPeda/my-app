@@ -1,10 +1,13 @@
-import React from "react";
-import Programmer1 from "../../assets/programmer1.svg";
+import React, { useRef, useEffect } from "react";
 import { Grid, Container } from "@material-ui/core";
 import { useStyles } from "./headStyles";
 
+import { TweenMax, Linear } from "gsap";
+
 import { Link } from "react-scroll";
 import { FaChevronDown } from "react-icons/fa";
+
+import SvgProgrammer from "../../assets/Programmer/SvgProgrammer";
 
 interface IHead {
   text: Language;
@@ -12,7 +15,18 @@ interface IHead {
 
 const Head: React.FC<IHead> = (props) => {
   const { text } = props;
+  const smoke1 = useRef(null);
   const classes = useStyles();
+
+  useEffect(() => {
+    TweenMax.fromTo(
+      smoke1.current,
+      5,
+      { y: 18 },
+      { y: -18, ease: Linear.easeNone, opacity: 0, repeat: -1 }
+    );
+  });
+
   return (
     <Container>
       <Grid container className={classes.container}>
@@ -39,7 +53,7 @@ const Head: React.FC<IHead> = (props) => {
             className={classes.imageContainer}
             aria-label="image of programmer"
           >
-            <img className={classes.image} src={Programmer1} alt="programmer" />
+            <SvgProgrammer className={classes.image} />
           </div>
         </Grid>
         <div className={classes.arrow}>
