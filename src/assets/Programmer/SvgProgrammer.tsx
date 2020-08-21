@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from "react";
 import gsap, { Linear } from "gsap";
 
 function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
-  const smoke1 = useRef(null);
-  const smoke2 = useRef(null);
+  const largeCoffeeSmoke = useRef(null);
+  const smallCoffeeSmoke = useRef(null);
+  // const leftEyebrows = useRef(null);
+  // const rightEyebrows = useRef(null);
 
   gsap.config({
     nullTargetWarn: false
@@ -13,7 +15,7 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
     element: React.MutableRefObject<null>,
     delayNumber: number
   ) => {
-    var fa = gsap.timeline();
+    let fa = gsap.timeline();
 
     fa.to(element.current, 1.5, {
       y: -35,
@@ -29,9 +31,27 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
     fa.repeat(-1);
   };
 
+  // const timeLineForEye = (element: React.MutableRefObject<null>) => {
+  //   let fa = gsap.timeline();
+  //   fa.to(element.current, 0, {
+  //     y: 4,
+  //     repeat: -1,
+  //     ease: Linear.easeNone
+  //   });
+  //   fa.to(element.current, 1, {
+  //     y: 0,
+  //     yoyo: true,
+  //     repeatDelay: 2,
+  //     repeat: -1,
+  //     ease: Linear.easeNone
+  //   });
+  // };
+
   useEffect(() => {
-    timeLineFunction(smoke1, 0);
-    timeLineFunction(smoke2, 0.5);
+    timeLineFunction(largeCoffeeSmoke, 0);
+    timeLineFunction(smallCoffeeSmoke, 0.5);
+    // timeLineForEye(leftEyebrows);
+    // timeLineForEye(rightEyebrows);
   });
 
   return (
@@ -100,13 +120,13 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
       />
       <path
         style={{ opacity: 0 }}
-        ref={smoke1}
+        ref={largeCoffeeSmoke}
         fill="url(#prefix___Linear8)"
         d="M1167.01 1205.97s-5.371 15.12 8.481 33.798c13.853 18.679 10.614 29.317 8.181 36.98-2.67 8.411-4.091 18.891-.828 30.303 0 0 2.845-17.147 15.104-33.939 12.258-16.792-1.255-29.128-9.71-36.514-14.309-12.502-19.511-17.819-21.228-30.628z"
       />
       <path
         style={{ opacity: 0 }}
-        ref={smoke2}
+        ref={smallCoffeeSmoke}
         fill="url(#prefix___Linear9)"
         d="M1164.08 1261.32s5.186 6.802 1.192 18.539c-3.995 11.736-.62 16.61 1.861 20.104 2.725 3.836 5.151 8.925 5.35 15.25 0 0-4.233-8.243-13.188-14.774-8.955-6.53-4.101-14.991-1.011-20.116 5.231-8.675 7.007-12.22 5.796-19.003z"
       />
@@ -185,6 +205,7 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
         ry={140.958}
       />
       <path
+        // uzacis
         fill="#2b1927"
         d="M1511.34 857.511a2.295 2.295 0 012.706 2.239c.038 3.661.09 10.132.119 13.633a2.304 2.304 0 01-2.426 2.318c-7.089-.156-28.265.603-45.782 13.335 0 0-5.263-.487-3.542-5.428 1.661-4.767 24.299-21.352 48.925-26.097zm51.55-.817a2.296 2.296 0 00-2.706 2.239c-.038 3.661-.09 10.132-.119 13.633a2.305 2.305 0 002.426 2.318c7.089-.155 28.265.603 45.782 13.335 0 0 5.263-.486 3.542-5.427-1.661-4.768-24.299-21.353-48.925-26.098z"
       />
@@ -216,8 +237,23 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
         rx={20.739}
         ry={20.478}
       />
-      <ellipse cx={1494.82} cy={923.415} fill="#34302d" rx={12.205} ry={13.8} />
-      <ellipse cx={1579.71} cy={923.641} fill="#34302d" rx={12.205} ry={13.8} />
+      // leftEyebrows
+      <ellipse
+        // ref={leftEyebrows}
+        cx={1494.82}
+        cy={923.415}
+        fill="#34302d"
+        rx={12.205}
+        ry={13.8}
+      />
+      <ellipse
+        // ref={rightEyebrows}
+        cx={1579.71}
+        cy={923.641}
+        fill="#34302d"
+        rx={12.205}
+        ry={13.8}
+      />
       <path
         fill="#050604"
         stroke="#050604"
