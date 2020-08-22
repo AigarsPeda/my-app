@@ -17,7 +17,7 @@ const Head: React.FC<IHead> = (props) => {
   const { text } = props;
   const classes = useStyles();
 
-  const animationFunction = (classToAnimation: string) => {
+  const slideUpAnimation = (classToAnimation: string) => {
     const tl = gsap.timeline();
 
     tl.fromTo(
@@ -35,14 +35,14 @@ const Head: React.FC<IHead> = (props) => {
       },
       {
         y: 0,
-        opacity: 1,
-        skewY: 0
+        opacity: 1
+        // skewY: 0
       }
     );
   };
 
   useEffect(() => {
-    animationFunction(classes.container);
+    slideUpAnimation(classes.container);
   });
 
   return (
