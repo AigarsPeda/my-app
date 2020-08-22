@@ -15,7 +15,7 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
     element: React.MutableRefObject<null>,
     delayNumber: number
   ) => {
-    let fa = gsap.timeline();
+    const fa = gsap.timeline();
 
     fa.to(element.current, 1.5, {
       y: -35,
@@ -32,7 +32,7 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
   };
 
   // const timeLineForEye = (element: React.MutableRefObject<null>) => {
-  //   let fa = gsap.timeline();
+  //   const fa = gsap.timeline();
   //   fa.to(element.current, 0, {
   //     y: 4,
   //     repeat: -1,

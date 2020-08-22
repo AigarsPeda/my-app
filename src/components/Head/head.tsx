@@ -1,8 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Grid, Container } from "@material-ui/core";
 import { useStyles } from "./headStyles";
 
-import { TweenMax, Linear } from "gsap";
+import gsap from "gsap";
 
 import { Link } from "react-scroll";
 import { FaChevronDown } from "react-icons/fa";
@@ -15,24 +15,46 @@ interface IHead {
 
 const Head: React.FC<IHead> = (props) => {
   const { text } = props;
-  const smoke1 = useRef(null);
   const classes = useStyles();
 
-  useEffect(() => {
-    TweenMax.fromTo(
-      smoke1.current,
-      5,
-      { y: 18 },
-      { y: -18, ease: Linear.easeNone, opacity: 0, repeat: -1 }
+  const animationFunction = (classToAnimation: string) => {
+    const tl = gsap.timeline();
+
+    tl.fromTo(
+      `.${classToAnimation}`,
+      1.8,
+      {
+        y: 170,
+        opacity: 0,
+        ease: "power4.out",
+        delay: 1,
+        // skewY: 7,
+        stagger: {
+          amount: 0.3
+        }
+      },
+      {
+        y: 0,
+        opacity: 1,
+        skewY: 0
+      }
     );
+  };
+
+  useEffect(() => {
+    animationFunction(classes.container);
   });
 
   return (
     <Container>
       <Grid container className={classes.container}>
-        <Grid item lg={6} md={6} sm={6} xs={12}>
-          <div className={classes.text} aria-label="main head line">
-            <h1>{text.text}</h1>
+        <Grid item lg={6} md={6} sm={6} xs={12} className="head">
+          <div
+            // ref={tittle}
+            className={classes.text}
+            aria-label="main head line"
+          >
+            <h1 className="title">{text.text}</h1>
           </div>
           <Link
             className={classes.button}
