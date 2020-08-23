@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Grid, Container } from "@material-ui/core";
 import { useStyles } from "./headStyles";
 
@@ -17,40 +17,31 @@ const Head: React.FC<IHead> = (props) => {
   const { text } = props;
   const classes = useStyles();
 
-  const slideUpAnimation = (classToAnimation: string) => {
+  const titleRef = useRef(null);
+
+  const slideUpAnimation = (refToAnimation: React.MutableRefObject<null>) => {
     const tl = gsap.timeline();
 
-    // if (window.performance) {
-    //   if (performance.navigation.type === 1) {
-    //     alert("This page is reloaded");
-    //   } else {
-    //     alert("This page is not reloaded");
-    //   }
-    // }
-
     tl.fromTo(
-      `.${classToAnimation}`,
-      1.8,
+      refToAnimation.current,
+      3,
       {
-        y: 140,
+        y: 200,
         opacity: 0,
-        ease: "power4.out",
-        delay: 1
-        // skewY: 7,
-        // stagger: {
-        //   amount: 0.3
-        // }
+        delay: 1,
+        skewY: 7
       },
       {
         y: 0,
-        opacity: 1
-        // skewY: 0
+        opacity: 1,
+        ease: "elastic.out(0.5, 0.3)",
+        skewY: 0
       }
     );
   };
 
   useEffect(() => {
-    slideUpAnimation(classes.title);
+    slideUpAnimation(titleRef);
   });
 
   return (
@@ -62,7 +53,9 @@ const Head: React.FC<IHead> = (props) => {
       >
         <Grid item lg={6} md={6} sm={6} xs={12}>
           <div className={classes.text} aria-label="main head line">
-            <h1 className={classes.title}>{text.text}</h1>
+            <h1 ref={titleRef} className={classes.title}>
+              {text.text}
+            </h1>
           </div>
           <Link
             className={classes.button}
