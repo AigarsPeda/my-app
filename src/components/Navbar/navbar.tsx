@@ -13,7 +13,8 @@ const useStyles = makeStyles({
   root: {
     display: "flex",
     flexDirection: "row",
-    minHeight: "64px",
+    // minHeight: "64px",
+    paddingTop: "10px",
     justifyContent: "flex-end",
     width: "100%"
   },
