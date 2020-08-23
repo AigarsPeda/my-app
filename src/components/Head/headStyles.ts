@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
       marginTop: "10px",
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("xs")]: {
         height: "100vh"
       }
     },
@@ -68,7 +68,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     imageContainer: {
       // IPAD
-
+      maxWidth: "50%",
       // top:" 37px",
       // left: "267px"
       [theme.breakpoints.down("xs")]: {
@@ -77,10 +77,15 @@ export const useStyles = makeStyles((theme: Theme) =>
         display: "block",
         textAlign: "center",
         top: 425,
-        left: 1,
+        left: 89,
         zIndex: -1,
-        transform: "scale(2.2)"
+        transform: "scale(4.4)"
       }
+      // [theme.breakpoints.down("sm")]: {
+      //   backgroundColor: "red",
+      //   position: "relative",
+      //   maxWidth: "50%"
+      // }
     },
     image: {
       width: "100%",

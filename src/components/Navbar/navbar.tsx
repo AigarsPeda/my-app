@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   }
 });
 
-const NavBar: React.FC<INavBar> = props => {
+const NavBar: React.FC<INavBar> = (props) => {
   const { changeLanguage, language } = props;
   const classes = useStyles();
 
