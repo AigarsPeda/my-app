@@ -83,7 +83,6 @@ export const useStyles = makeStyles((theme: Theme) =>
         transform: "scale(2.3)",
         position: "absolute",
         top: 12,
-        // right: -121,
         right: -60,
         zIndex: -1
       },
@@ -94,7 +93,7 @@ export const useStyles = makeStyles((theme: Theme) =>
         display: "block",
         textAlign: "center",
         top: 485,
-        left: 89,
+        left: 98,
         zIndex: -1,
         transform: "scale(4.4)"
       }
