@@ -46,7 +46,14 @@ const Head: React.FC<IHead> = (props) => {
   });
 
   return (
-    <Container style={{ overflow: "hidden" }}>
+    <Container
+      style={{
+        overflow: "hidden",
+        borderBottomLeftRadius: "50px",
+        borderBottomRightRadius: "50px"
+        // padding: 0
+      }}
+    >
       <Grid container className={classes.container}>
         <Grid item lg={6} md={6} sm={6} xs={12}>
           <div className={classes.text} aria-label="main head line">
