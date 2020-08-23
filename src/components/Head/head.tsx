@@ -58,7 +58,7 @@ const Head: React.FC<IHead> = (props) => {
       <Grid
         container
         className={classes.container}
-        style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+        style={{ transform: "translate(0px, 0px)" }}
       >
         <Grid item lg={6} md={6} sm={6} xs={12}>
           <div className={classes.text} aria-label="main head line">

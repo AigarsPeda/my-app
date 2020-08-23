@@ -11,8 +11,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       borderBottomRightRadius: "25px",
       padding: 0,
       [theme.breakpoints.down("xs")]: {
-        borderBottomLeftRadius: "50px",
-        borderBottomRightRadius: "50px"
+        borderBottomLeftRadius: "18px",
+        borderBottomRightRadius: "18px"
       }
     },
     container: {
