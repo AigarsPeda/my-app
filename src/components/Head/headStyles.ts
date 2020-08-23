@@ -71,7 +71,7 @@ export const useStyles = makeStyles((theme: Theme) =>
 
       // top:" 37px",
       // left: "267px"
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("xs")]: {
         width: "100%",
         position: "absolute",
         display: "block",
