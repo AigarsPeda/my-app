@@ -46,15 +46,11 @@ const Head: React.FC<IHead> = (props) => {
   });
 
   return (
-    <Container>
+    <Container style={{ overflow: "hidden" }}>
       <Grid container className={classes.container}>
-        <Grid item lg={6} md={6} sm={6} xs={12} className="head">
-          <div
-            // ref={tittle}
-            className={classes.text}
-            aria-label="main head line"
-          >
-            <h1 className="title">{text.text}</h1>
+        <Grid item lg={6} md={6} sm={6} xs={12}>
+          <div className={classes.text} aria-label="main head line">
+            <h1 className={classes.title}>{text.text}</h1>
           </div>
           <Link
             className={classes.button}
@@ -69,12 +65,15 @@ const Head: React.FC<IHead> = (props) => {
             {text.button}
           </Link>
         </Grid>
-
-        <Grid item lg={6} md={6} sm={6} xs={12}>
-          <div
-            className={classes.imageContainer}
-            aria-label="image of programmer"
-          >
+        <Grid
+          item
+          lg={6}
+          md={6}
+          sm={12}
+          xs={12}
+          className={classes.imageContainer}
+        >
+          <div aria-label="image of programmer">
             <SvgProgrammer className={classes.image} />
           </div>
         </Grid>
