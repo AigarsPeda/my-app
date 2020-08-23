@@ -73,7 +73,7 @@ const Head: React.FC<IHead> = (props) => {
               display: "block",
               textAlign: "center",
               top: 420,
-              left: -23,
+              left: 1,
               zIndex: -1
             }}
           >
