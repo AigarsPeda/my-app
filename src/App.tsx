@@ -18,7 +18,7 @@ const App: React.FC = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Container>
+      <Container style={{ padding: 0 }}>
         <Home />
       </Container>
     </div>

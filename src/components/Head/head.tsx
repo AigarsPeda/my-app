@@ -46,52 +46,65 @@ const Head: React.FC<IHead> = (props) => {
   });
 
   return (
-    <Container>
-      <Grid container className={classes.container}>
-        <Grid item lg={6} md={6} sm={6} xs={12} className="head">
+    <div style={{ overflow: "hidden", width: "90vw" }}>
+      <Container>
+        <Grid container className={classes.container}>
+          <Grid item lg={6} md={6} sm={6} xs={12}>
+            <div className={classes.text} aria-label="main head line">
+              <h1 className={classes.title}>{text.text}</h1>
+            </div>
+            <Link
+              className={classes.button}
+              activeClass="repositories"
+              to="sectionContacts"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              aria-label="contact me"
+            >
+              {text.button}
+            </Link>
+          </Grid>
           <div
-            // ref={tittle}
-            className={classes.text}
-            aria-label="main head line"
+            style={{
+              width: "100%",
+              position: "absolute",
+              display: "block",
+              textAlign: "center",
+              top: 420,
+              left: -23,
+              zIndex: -1
+            }}
           >
-            <h1 className="title">{text.text}</h1>
+            <Grid
+              item
+              lg={6}
+              md={6}
+              sm={6}
+              xs={12}
+              className={classes.imageContainer}
+            >
+              <div aria-label="image of programmer">
+                <SvgProgrammer className={classes.image} />
+              </div>
+            </Grid>
           </div>
-          <Link
-            className={classes.button}
-            activeClass="repositories"
-            to="sectionContacts"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            aria-label="contact me"
-          >
-            {text.button}
-          </Link>
-        </Grid>
-
-        <Grid item lg={6} md={6} sm={6} xs={12}>
-          <div
-            className={classes.imageContainer}
-            aria-label="image of programmer"
-          >
-            <SvgProgrammer className={classes.image} />
+          <div className={classes.arrow}>
+            <Link
+              activeClass="repositories"
+              to="repositories"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+            >
+              <FaChevronDown aria-label="arrow down" />
+            </Link>
           </div>
         </Grid>
-        <div className={classes.arrow}>
-          <Link
-            activeClass="repositories"
-            to="repositories"
-            spy={true}
-            smooth={true}
-            offset={-10}
-            duration={500}
-          >
-            <FaChevronDown aria-label="arrow down" />
-          </Link>
-        </div>
-      </Grid>
-    </Container>
+      </Container>
+    </div>
   );
 };
 
