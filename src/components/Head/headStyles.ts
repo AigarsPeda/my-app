@@ -77,8 +77,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontSize: "2em"
     },
     imageContainer: {
-      // IPAD
-
+      // Tablet
       [theme.breakpoints.down("sm")]: {
         maxWidth: "50%",
         transform: "scale(2.3)",
@@ -88,12 +87,6 @@ export const useStyles = makeStyles((theme: Theme) =>
         right: -60,
         zIndex: -1
       },
-      //   top: 12px;
-      // right: -121px;
-      // position: absolute;
-      // max-width: 50%;
-      // transform: scale(2.3);
-      // z-index: -1;
       // Phone
       [theme.breakpoints.down("xs")]: {
         width: "100%",
