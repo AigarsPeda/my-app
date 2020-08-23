@@ -73,7 +73,16 @@ export const useStyles = makeStyles((theme: Theme) =>
       // maxWidth: "400px",
       // overflow: "hidden",
       // zIndex: -100,
-      transform: "scale(2.2)"
+      [theme.breakpoints.down("sm")]: {
+        width: "100%",
+        position: "absolute",
+        display: "block",
+        textAlign: "center",
+        top: 420,
+        left: 1,
+        zIndex: -1,
+        transform: "scale(2.2)"
+      }
     },
     image: {
       width: "100%",
