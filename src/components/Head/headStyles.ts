@@ -76,7 +76,7 @@ export const useStyles = makeStyles((theme: Theme) =>
         position: "absolute",
         display: "block",
         textAlign: "center",
-        top: 425,
+        top: 460,
         left: 89,
         zIndex: -1,
         transform: "scale(4.4)"
