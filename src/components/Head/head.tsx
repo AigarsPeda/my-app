@@ -32,14 +32,14 @@ const Head: React.FC<IHead> = (props) => {
       `.${classToAnimation}`,
       1.8,
       {
-        y: 170,
+        y: 140,
         opacity: 0,
         ease: "power4.out",
-        delay: 1,
+        delay: 1
         // skewY: 7,
-        stagger: {
-          amount: 0.3
-        }
+        // stagger: {
+        //   amount: 0.3
+        // }
       },
       {
         y: 0,
@@ -50,12 +50,16 @@ const Head: React.FC<IHead> = (props) => {
   };
 
   useEffect(() => {
-    slideUpAnimation(classes.container);
+    slideUpAnimation(classes.title);
   });
 
   return (
     <Container className={classes.main}>
-      <Grid container className={classes.container}>
+      <Grid
+        container
+        className={classes.container}
+        style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+      >
         <Grid item lg={6} md={6} sm={6} xs={12}>
           <div className={classes.text} aria-label="main head line">
             <h1 className={classes.title}>{text.text}</h1>

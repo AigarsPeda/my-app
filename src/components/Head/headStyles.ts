@@ -77,6 +77,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontSize: "2em"
     },
     imageContainer: {
+      // transform: "translate(0px, 0px)",
       // Tablet
       [theme.breakpoints.down("sm")]: {
         maxWidth: "50%",
@@ -91,7 +92,6 @@ export const useStyles = makeStyles((theme: Theme) =>
         width: "100%",
         position: "absolute",
         display: "block",
-        textAlign: "center",
         top: 485,
         left: 89,
         zIndex: -1,

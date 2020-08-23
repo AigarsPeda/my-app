@@ -8,9 +8,10 @@ import { Container } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     color: "#ffff",
-    backgroundColor: "#08062b",
+    // backgroundColor: "#08062b",
     maxWidth: "90vw",
-    margin: "auto"
+    margin: "auto",
+    overflow: "hidden"
   }
 });
 
