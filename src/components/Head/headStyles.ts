@@ -5,6 +5,16 @@ import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    main: {
+      overflow: "hidden",
+      borderTopRightRadius: "25px",
+      borderBottomRightRadius: "25px",
+      padding: 0,
+      [theme.breakpoints.down("xs")]: {
+        borderBottomLeftRadius: "50px",
+        borderBottomRightRadius: "50px"
+      }
+    },
     container: {
       marginTop: "10px",
       [theme.breakpoints.down("xs")]: {
@@ -68,9 +78,23 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     imageContainer: {
       // IPAD
-      maxWidth: "50%",
-      // top:" 37px",
-      // left: "267px"
+
+      [theme.breakpoints.down("sm")]: {
+        maxWidth: "50%",
+        transform: "scale(2.3)",
+        position: "absolute",
+        top: 12,
+        // right: -121,
+        right: -60,
+        zIndex: -1
+      },
+      //   top: 12px;
+      // right: -121px;
+      // position: absolute;
+      // max-width: 50%;
+      // transform: scale(2.3);
+      // z-index: -1;
+      // Phone
       [theme.breakpoints.down("xs")]: {
         width: "100%",
         position: "absolute",
@@ -81,11 +105,6 @@ export const useStyles = makeStyles((theme: Theme) =>
         zIndex: -1,
         transform: "scale(4.4)"
       }
-      // [theme.breakpoints.down("sm")]: {
-      //   backgroundColor: "red",
-      //   position: "relative",
-      //   maxWidth: "50%"
-      // }
     },
     image: {
       width: "100%",

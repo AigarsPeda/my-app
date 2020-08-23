@@ -20,6 +20,14 @@ const Head: React.FC<IHead> = (props) => {
   const slideUpAnimation = (classToAnimation: string) => {
     const tl = gsap.timeline();
 
+    // if (window.performance) {
+    //   if (performance.navigation.type === 1) {
+    //     alert("This page is reloaded");
+    //   } else {
+    //     alert("This page is not reloaded");
+    //   }
+    // }
+
     tl.fromTo(
       `.${classToAnimation}`,
       1.8,
@@ -46,14 +54,7 @@ const Head: React.FC<IHead> = (props) => {
   });
 
   return (
-    <Container
-      style={{
-        overflow: "hidden",
-        borderBottomLeftRadius: "50px",
-        borderBottomRightRadius: "50px"
-        // padding: 0
-      }}
-    >
+    <Container className={classes.main}>
       <Grid container className={classes.container}>
         <Grid item lg={6} md={6} sm={6} xs={12}>
           <div className={classes.text} aria-label="main head line">
