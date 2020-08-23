@@ -18,13 +18,36 @@ const Head: React.FC<IHead> = (props) => {
   const classes = useStyles();
 
   const titleRef = useRef(null);
+  const buttonRef = useRef(null);
 
-  const slideUpAnimation = (refToAnimation: React.MutableRefObject<null>) => {
+  // const slideUpAnimation = (refToAnimation: React.MutableRefObject<null>) => {
+  //   const tl = gsap.timeline();
+
+  //   tl.fromTo(
+  //     refToAnimation.current,
+  //     3,
+  //     {
+  //       y: 200,
+  //       opacity: 0,
+  //       delay: 1,
+  //       skewY: 7
+  //     },
+  //     {
+  //       y: 0,
+  //       opacity: 1,
+  //       ease: "elastic.out(0.5, 0.3)",
+  //       skewY: 0
+  //     }
+  //   );
+  // };
+
+  useEffect(() => {
+    // slideUpAnimation(titleRef);
     const tl = gsap.timeline();
 
     tl.fromTo(
-      refToAnimation.current,
-      3,
+      titleRef.current,
+      2.5,
       {
         y: 200,
         opacity: 0,
@@ -34,14 +57,27 @@ const Head: React.FC<IHead> = (props) => {
       {
         y: 0,
         opacity: 1,
-        ease: "elastic.out(0.5, 0.3)",
+        ease: "elastic.out(0.4, 0.2)",
         skewY: 0
       }
     );
-  };
-
-  useEffect(() => {
-    slideUpAnimation(titleRef);
+    tl.fromTo(
+      buttonRef.current,
+      1,
+      {
+        y: -200,
+        opacity: 0,
+        delay: 1,
+        skewY: 7
+      },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "elastic.out(0.4, 0.2)",
+        skewY: 0
+      },
+      "-=1.5"
+    );
   });
 
   return (
@@ -57,18 +93,20 @@ const Head: React.FC<IHead> = (props) => {
               {text.text}
             </h1>
           </div>
-          <Link
-            className={classes.button}
-            activeClass="repositories"
-            to="sectionContacts"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            aria-label="contact me"
-          >
-            {text.button}
-          </Link>
+          <div ref={buttonRef}>
+            <Link
+              className={classes.button}
+              activeClass="repositories"
+              to="sectionContacts"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              aria-label="contact me"
+            >
+              {text.button}
+            </Link>
+          </div>
         </Grid>
         <Grid
           item
