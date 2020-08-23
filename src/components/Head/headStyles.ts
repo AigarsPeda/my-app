@@ -7,7 +7,9 @@ export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
       marginTop: "10px",
-      height: "100vh"
+      [theme.breakpoints.down("sm")]: {
+        height: "100vh"
+      }
     },
     text: {
       fontSize: "20px",
@@ -65,14 +67,10 @@ export const useStyles = makeStyles((theme: Theme) =>
       fontSize: "2em"
     },
     imageContainer: {
-      // position: "absolute",
-      // [theme.breakpoints.up("lg")]: {
-      //   position: "relative"
-      // }
-      // top: 0,
-      // maxWidth: "400px",
-      // overflow: "hidden",
-      // zIndex: -100,
+      // IPAD
+
+      // top:" 37px",
+      // left: "267px"
       [theme.breakpoints.down("sm")]: {
         width: "100%",
         position: "absolute",
