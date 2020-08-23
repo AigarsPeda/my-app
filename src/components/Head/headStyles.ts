@@ -93,7 +93,7 @@ export const useStyles = makeStyles((theme: Theme) =>
         display: "block",
         textAlign: "center",
         top: 485,
-        left: 98,
+        left: 89,
         zIndex: -1,
         transform: "scale(4.4)"
       }
