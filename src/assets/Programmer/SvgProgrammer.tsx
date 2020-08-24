@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import gsap, { Linear } from "gsap";
+import gsap from "gsap";
 
 function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
   const largeCoffeeSmoke = useRef(null);
@@ -32,7 +32,7 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
   useEffect(() => {
     timeLineFunction(largeCoffeeSmoke, 0);
     timeLineFunction(smallCoffeeSmoke, 0.5);
-  });
+  }, []);
 
   return (
     <svg

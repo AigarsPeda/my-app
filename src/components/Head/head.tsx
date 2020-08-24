@@ -20,27 +20,6 @@ const Head: React.FC<IHead> = (props) => {
   const titleRef = useRef(null);
   const buttonRef = useRef(null);
 
-  // const slideUpAnimation = (refToAnimation: React.MutableRefObject<null>) => {
-  //   const tl = gsap.timeline();
-
-  //   tl.fromTo(
-  //     refToAnimation.current,
-  //     3,
-  //     {
-  //       y: 200,
-  //       opacity: 0,
-  //       delay: 1,
-  //       skewY: 7
-  //     },
-  //     {
-  //       y: 0,
-  //       opacity: 1,
-  //       ease: "elastic.out(0.5, 0.3)",
-  //       skewY: 0
-  //     }
-  //   );
-  // };
-
   useEffect(() => {
     // slideUpAnimation(titleRef);
     const tl = gsap.timeline();
@@ -78,7 +57,7 @@ const Head: React.FC<IHead> = (props) => {
       },
       "-=1.7"
     );
-  });
+  }, [text]);
 
   return (
     <Container className={classes.main}>
