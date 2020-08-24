@@ -74,8 +74,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       }
     },
     title: {
-      fontSize: "2em",
-      paddingTop: "16px"
+      fontSize: "2em"
+      // paddingTop: "16px"
     },
     imageContainer: {
       // transform: "translate(0px, 0px)",
