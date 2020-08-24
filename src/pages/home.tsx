@@ -70,7 +70,7 @@ const Home = () => {
     // reviles title and button on first render
     tl.fromTo(
       imageRef.current,
-      2,
+      1.5,
       {
         y: 1000,
         opacity: 0
