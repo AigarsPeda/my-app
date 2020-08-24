@@ -80,7 +80,8 @@ const Home = () => {
         y: 0,
         opacity: 1,
         ease: "expo.inOut"
-      }
+      },
+      0.2
     );
     tl.fromTo(
       [titleRef.current],
