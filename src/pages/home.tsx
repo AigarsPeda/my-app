@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import gsap from "gsap";
+
 import { mainText } from "../data/text";
 import { data, dataText } from "../data/repositories";
 import { contactsData, contactsLabel } from "../data/cv";
+
 import Head from "../components/Head/head";
 import Projects from "../components/Projects/projects";
 import Contacts from "../components/Contacts/contacts";
@@ -30,6 +33,10 @@ const Home = () => {
   });
   const [repoImageList, setRepoImageList] = useState<string[]>();
 
+  const titleRef = useRef(null);
+  const buttonRef = useRef(null);
+  const imageRef = useRef(null);
+
   const setRepoImagesById = (id: number) => {
     repositories?.filter((repo) => {
       if (repo.id === id) {
@@ -57,14 +64,109 @@ const Home = () => {
     }
   }, [language]);
 
+  useEffect(() => {
+    const tl = gsap.timeline();
+    // TO DO  - make animation for image
+    tl.fromTo(
+      [titleRef.current],
+      3,
+      {
+        y: 200,
+        opacity: 0,
+        delay: 1,
+        skewY: 7
+      },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "elastic.out(0.4, 0.2)",
+        skewY: 0
+      }
+    );
+    tl.fromTo(
+      buttonRef.current,
+      1.2,
+      {
+        y: -200,
+        opacity: 0,
+        delay: 1,
+        skewY: 7
+      },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "elastic.out(0.4, 0.2)",
+        skewY: 0
+      },
+      "-=1.7"
+    );
+  }, []);
+
   const changeLanguage = () => {
-    setLanguage(language === "ENG" ? "LV" : "ENG");
+    const tl = gsap.timeline();
+    tl.fromTo(
+      [titleRef.current, buttonRef.current],
+      0.8,
+      {
+        y: 0,
+        opacity: 1,
+        skewY: 0
+      },
+      {
+        y: -200,
+        opacity: 0,
+        ease: "power4.in",
+        skewY: -7,
+        onComplete: function () {
+          setLanguage(language === "ENG" ? "LV" : "ENG");
+        }
+      }
+    );
+
+    tl.fromTo(
+      [titleRef.current],
+      3,
+      {
+        y: 200,
+        opacity: 0,
+        delay: 1,
+        skewY: 7
+      },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "elastic.out(0.4, 0.2)",
+        skewY: 0
+      }
+    );
+    tl.fromTo(
+      buttonRef.current,
+      1.2,
+      {
+        y: -200,
+        opacity: 0,
+        delay: 1,
+        skewY: 7
+      },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "elastic.out(0.4, 0.2)",
+        skewY: 0
+      },
+      "-=1.7"
+    );
   };
 
   return (
     <div>
       <NavBar changeLanguage={changeLanguage} language={language} />
-      <Head text={text} />
+      <Head
+        text={text}
+        titleRef={titleRef}
+        buttonRef={buttonRef}
+        imageRef={imageRef}
+      />
       <Projects
         repositories={repositories}
         secondary={secondary}

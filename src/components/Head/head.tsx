@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Grid, Container } from "@material-ui/core";
 import { useStyles } from "./headStyles";
 
-import gsap from "gsap";
+// import gsap from "gsap";
 
 import { Link } from "react-scroll";
 import { FaChevronDown } from "react-icons/fa";
@@ -11,53 +11,14 @@ import SvgProgrammer from "../../assets/Programmer/SvgProgrammer";
 
 interface IHead {
   text: Language;
+  titleRef: React.MutableRefObject<null>;
+  buttonRef: React.MutableRefObject<null>;
+  imageRef: React.MutableRefObject<null>;
 }
 
 const Head: React.FC<IHead> = (props) => {
-  const { text } = props;
+  const { text, titleRef, buttonRef, imageRef } = props;
   const classes = useStyles();
-
-  const titleRef = useRef(null);
-  const buttonRef = useRef(null);
-
-  useEffect(() => {
-    // slideUpAnimation(titleRef);
-    const tl = gsap.timeline();
-
-    tl.fromTo(
-      titleRef.current,
-      3,
-      {
-        y: 200,
-        opacity: 0,
-        delay: 1,
-        skewY: 7
-      },
-      {
-        y: 0,
-        opacity: 1,
-        ease: "elastic.out(0.4, 0.2)",
-        skewY: 0
-      }
-    );
-    tl.fromTo(
-      buttonRef.current,
-      1.2,
-      {
-        y: -200,
-        opacity: 0,
-        delay: 1,
-        skewY: 7
-      },
-      {
-        y: 0,
-        opacity: 1,
-        ease: "elastic.out(0.4, 0.2)",
-        skewY: 0
-      },
-      "-=1.7"
-    );
-  }, [text]);
 
   return (
     <Container className={classes.main}>
@@ -95,7 +56,7 @@ const Head: React.FC<IHead> = (props) => {
           xs={12}
           className={classes.imageContainer}
         >
-          <div aria-label="image of programmer">
+          <div ref={imageRef} aria-label="image of programmer">
             <SvgProgrammer className={classes.image} />
           </div>
         </Grid>
