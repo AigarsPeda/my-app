@@ -47,7 +47,7 @@ const Head: React.FC<IHead> = (props) => {
 
     tl.fromTo(
       titleRef.current,
-      2.5,
+      3,
       {
         y: 200,
         opacity: 0,
@@ -63,7 +63,7 @@ const Head: React.FC<IHead> = (props) => {
     );
     tl.fromTo(
       buttonRef.current,
-      1,
+      1.2,
       {
         y: -200,
         opacity: 0,
@@ -76,7 +76,7 @@ const Head: React.FC<IHead> = (props) => {
         ease: "elastic.out(0.4, 0.2)",
         skewY: 0
       },
-      "-=1.5"
+      "-=1.7"
     );
   });
 
