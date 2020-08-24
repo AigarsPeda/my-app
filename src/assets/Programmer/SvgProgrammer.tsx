@@ -4,8 +4,6 @@ import gsap, { Linear } from "gsap";
 function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
   const largeCoffeeSmoke = useRef(null);
   const smallCoffeeSmoke = useRef(null);
-  // const leftEyebrows = useRef(null);
-  // const rightEyebrows = useRef(null);
 
   gsap.config({
     nullTargetWarn: false
@@ -19,39 +17,21 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
 
     fa.to(element.current, 1.5, {
       y: -35,
-      ease: Linear.easeIn,
+      ease: "none",
       opacity: 1
     });
     fa.to(element.current, 2, {
       y: -95,
-      ease: Linear.easeOut,
+      ease: "power2.out",
       opacity: 0
     });
     fa.delay(delayNumber);
     fa.repeat(-1);
   };
 
-  // const timeLineForEye = (element: React.MutableRefObject<null>) => {
-  //   const fa = gsap.timeline();
-  //   fa.to(element.current, 0, {
-  //     y: 4,
-  //     repeat: -1,
-  //     ease: Linear.easeNone
-  //   });
-  //   fa.to(element.current, 1, {
-  //     y: 0,
-  //     yoyo: true,
-  //     repeatDelay: 2,
-  //     repeat: -1,
-  //     ease: Linear.easeNone
-  //   });
-  // };
-
   useEffect(() => {
     timeLineFunction(largeCoffeeSmoke, 0);
     timeLineFunction(smallCoffeeSmoke, 0.5);
-    // timeLineForEye(leftEyebrows);
-    // timeLineForEye(rightEyebrows);
   });
 
   return (
