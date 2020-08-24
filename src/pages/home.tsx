@@ -66,10 +66,25 @@ const Home = () => {
 
   useEffect(() => {
     const tl = gsap.timeline();
-    // TO DO  - make animation for image
+
+    tl.fromTo(
+      imageRef.current,
+      2,
+      {
+        y: 1000,
+        opacity: 0
+        // skewY: -7
+      },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "expo.inOut"
+      }
+    );
+
     tl.fromTo(
       [titleRef.current],
-      3,
+      2,
       {
         y: 200,
         opacity: 0,
@@ -85,7 +100,7 @@ const Home = () => {
     );
     tl.fromTo(
       buttonRef.current,
-      1.2,
+      1.5,
       {
         y: -200,
         opacity: 0,
@@ -125,7 +140,7 @@ const Home = () => {
 
     tl.fromTo(
       [titleRef.current],
-      3,
+      2.2,
       {
         y: 200,
         opacity: 0,
@@ -141,7 +156,7 @@ const Home = () => {
     );
     tl.fromTo(
       buttonRef.current,
-      1.2,
+      1,
       {
         y: -200,
         opacity: 0,
@@ -154,7 +169,7 @@ const Home = () => {
         ease: "elastic.out(0.4, 0.2)",
         skewY: 0
       },
-      "-=1.7"
+      "-=1.5"
     );
   };
 
