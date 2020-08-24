@@ -19,7 +19,8 @@ const useStyles = makeStyles({
     width: "100%"
   },
   label: {
-    color: "#FF8E53"
+    color: "#FF8E53",
+    width: "75px"
   }
 });
 
