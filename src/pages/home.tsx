@@ -67,6 +67,7 @@ const Home = () => {
   useEffect(() => {
     const tl = gsap.timeline();
 
+    // reviles title and button on first render
     tl.fromTo(
       imageRef.current,
       2,
@@ -81,7 +82,6 @@ const Home = () => {
         ease: "expo.inOut"
       }
     );
-
     tl.fromTo(
       [titleRef.current],
       2,
@@ -119,6 +119,7 @@ const Home = () => {
 
   const changeLanguage = () => {
     const tl = gsap.timeline();
+    // hides text after lang toggle change
     tl.fromTo(
       [titleRef.current, buttonRef.current],
       0.8,
@@ -138,6 +139,7 @@ const Home = () => {
       }
     );
 
+    // reviles new title and button with new lang
     tl.fromTo(
       [titleRef.current],
       2.2,
