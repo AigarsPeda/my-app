@@ -5,6 +5,9 @@ export const useStyles = makeStyles((theme: Theme) =>
     root: {
       flexGrow: 1
     },
+    container: {
+      padding: 0
+    },
     grid: {
       minHeight: "100vh",
       marginTop: "0.5rem"

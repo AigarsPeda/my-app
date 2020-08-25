@@ -19,7 +19,7 @@ const Projects: React.FC<IProject> = (props) => {
   const classes = useStyles();
 
   return (
-    <Container style={{ padding: 0 }}>
+    <Container className={classes.container}>
       <Grid
         container
         direction="row"

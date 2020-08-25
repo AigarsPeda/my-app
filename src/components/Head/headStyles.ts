@@ -1,8 +1,5 @@
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 
-// export const useStyles = makeStyles((theme: Theme) =>
-//   createStyles({
-
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     main: {
@@ -75,10 +72,8 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     title: {
       fontSize: "2em"
-      // paddingTop: "16px"
     },
     imageContainer: {
-      // transform: "translate(0px, 0px)",
       // Tablet
       [theme.breakpoints.down("sm")]: {
         maxWidth: "50%",
