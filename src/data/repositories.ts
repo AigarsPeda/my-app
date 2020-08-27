@@ -1,11 +1,27 @@
 export const data: Repositories[] = [
   {
+    id: 13,
+    name: "ticket-app",
+    code: "https://github.com/AigarsPeda/ticket-app",
+    website: "",
+    language: "TypeScript",
+    library: "React",
+    testing: "Jest",
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/3.png",
+      "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/2.png",
+      "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/1.png",
+      "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/4.png"
+    ]
+  },
+  {
     id: 12,
     name: "password-generator",
     code: "https://github.com/AigarsPeda/password-generator",
     website: "https://aigarspeda.github.io/password-generator/",
     language: "TypeScript",
     library: "React",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/password-generator/master/screenshots/1.png",
       "https://raw.githubusercontent.com/AigarsPeda/password-generator/master/screenshots/2.png",
@@ -19,6 +35,7 @@ export const data: Repositories[] = [
     website: "https://aigarspeda.github.io/volleyball-king/",
     language: "TypeScript",
     library: "React",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/volleyball-king/master/screenshots/1.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/volleyball-king/master/screenshots/5.jpg",
@@ -37,6 +54,7 @@ export const data: Repositories[] = [
     website: "",
     language: "TypeScript",
     library: "React Native",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/food-app/master/screenshots/1.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/food-app/master/screenshots/2.jpg"
@@ -49,6 +67,7 @@ export const data: Repositories[] = [
     website: "",
     language: "TypeScript",
     library: "React",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg"
     ]
@@ -60,6 +79,7 @@ export const data: Repositories[] = [
     website: "https://aigarspeda.github.io/wood/",
     language: "TypeScript",
     library: "React",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/3.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/1.jpg",
@@ -74,6 +94,7 @@ export const data: Repositories[] = [
     website: "https://color-select-app.herokuapp.com",
     language: "JavaScript",
     library: "React",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/color-app.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot.png",
@@ -88,23 +109,24 @@ export const data: Repositories[] = [
     website: "",
     language: "TypeScript",
     library: "React",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/todo-react-typescript/master/screenshots/todo-react-typescript.jpg"
     ]
   },
-  {
-    id: 5,
-    name: "calendar-app",
-    code: "https://github.com/AigarsPeda/calendar-app",
-    website: "",
-    language: "TypeScript",
-    library: "React",
-    images: [
-      "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/1.jpg",
-      "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/2.jpg",
-      "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/3.jpg"
-    ]
-  },
+  // {
+  //   id: 5,
+  //   name: "calendar-app",
+  //   code: "https://github.com/AigarsPeda/calendar-app",
+  //   website: "",
+  //   language: "TypeScript",
+  //   library: "React",
+  //   images: [
+  //     "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/1.jpg",
+  //     "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/2.jpg",
+  //     "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/3.jpg"
+  //   ]
+  // },
   {
     id: 4,
     name: "e-commerce",
@@ -112,6 +134,7 @@ export const data: Repositories[] = [
     website: "https://shop-crwn-live.herokuapp.com/",
     language: "JavaScript",
     library: "React",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/e-commerce.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot2.png",
@@ -126,6 +149,7 @@ export const data: Repositories[] = [
     website: "https://aigars-face-detection.herokuapp.com/",
     language: "JavaScript",
     library: "React",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/face-detection-app.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/1.png",
@@ -140,6 +164,7 @@ export const data: Repositories[] = [
     website: "",
     language: "JavaScript",
     library: "",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/movies-website.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot2.png",
@@ -154,6 +179,7 @@ export const data: Repositories[] = [
     website: "https://aigarspeda.github.io/dad-jokes-app/",
     language: "JavaScript",
     library: "React",
+    testing: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/dad-jokes-app.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes.png",
@@ -169,6 +195,8 @@ export const dataText: DataText = {
     library: "Library / Framework",
     code: "Code",
     notDeployed: "Not deployed",
+    testing: "Test",
+    noTest: "No Test",
     website: "Website"
   },
   lv: {
@@ -177,6 +205,8 @@ export const dataText: DataText = {
     library: "Bibliotēka",
     code: "Kods",
     notDeployed: "Nav publicēta",
+    testing: "Test",
+    noTest: "Nav Testu",
     website: "Vietne"
   }
 };

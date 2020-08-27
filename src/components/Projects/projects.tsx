@@ -68,6 +68,18 @@ const Projects: React.FC<IProject> = (props) => {
                       />
                     </ListItem>
                     <ListItem>
+                      <ListItemText
+                        primary={
+                          repo.testing.length ? repo.testing : secondary.noTest
+                        }
+                        secondary={
+                          <Typography className={classes.secondaryText}>
+                            {secondary.testing}
+                          </Typography>
+                        }
+                      />
+                    </ListItem>
+                    <ListItem>
                       <a
                         href={repo.code}
                         target="_blank"

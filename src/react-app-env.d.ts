@@ -7,6 +7,7 @@ type Repositories = {
   website: string;
   language: string;
   library: string;
+  testing: string;
   images: Images;
 };
 
@@ -82,6 +83,8 @@ type DataLanguage = {
   code: string;
   notDeployed: string;
   website: string;
+  testing: string;
+  noTest: string;
 };
 
 type ContactsLabel = {

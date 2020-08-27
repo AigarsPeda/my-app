@@ -20,7 +20,9 @@ const Home = () => {
     library: "",
     code: "",
     notDeployed: "",
-    website: ""
+    website: "",
+    testing: "",
+    noTest: ""
   });
   const [language, setLanguage] = useState("ENG");
   const [contacts, setContacts] = useState<Contacts>();
