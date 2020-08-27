@@ -70,7 +70,13 @@ const Projects: React.FC<IProject> = (props) => {
                     <ListItem>
                       <ListItemText
                         primary={
-                          repo.testing.length ? repo.testing : secondary.noTest
+                          repo.testing.length ? (
+                            repo.testing
+                          ) : (
+                            <Typography className={classes.backupText}>
+                              {secondary.noTest}
+                            </Typography>
+                          )
                         }
                         secondary={
                           <Typography className={classes.secondaryText}>
