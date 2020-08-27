@@ -194,7 +194,7 @@ export const dataText: DataText = {
     none: "None",
     library: "Library / Framework",
     code: "Code",
-    notDeployed: "Not deployed",
+    notDeployed: "Not Deployed",
     testing: "Test",
     noTest: "No Test",
     website: "Website"
@@ -204,7 +204,7 @@ export const dataText: DataText = {
     none: "Neviena",
     library: "Bibliotēka",
     code: "Kods",
-    notDeployed: "Nav publicēta",
+    notDeployed: "Nav Publicēta",
     testing: "Test",
     noTest: "Nav Testu",
     website: "Vietne"
