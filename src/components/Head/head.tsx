@@ -60,18 +60,20 @@ const Head: React.FC<IHead> = (props) => {
             <SvgProgrammer className={classes.image} />
           </div>
         </Grid>
-        <div className={classes.arrow}>
-          <Link
-            activeClass="repositories"
-            to="repositories"
-            spy={true}
-            smooth={true}
-            offset={-10}
-            duration={500}
-          >
-            <FaChevronDown aria-label="arrow down" />
-          </Link>
-        </div>
+        <Link
+          activeClass="repositories"
+          to="repositories"
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={500}
+          className={classes.arrow}
+        >
+          <FaChevronDown
+            aria-label="arrow down"
+            style={{ cursor: "pointer" }}
+          />
+        </Link>
       </Grid>
     </Container>
   );

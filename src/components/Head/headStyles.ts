@@ -100,7 +100,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       transform: "scale(1.3)"
     },
     arrow: {
-      cursor: "pointer",
+      // cursor: "pointer",
       display: "none",
       padding: "1em",
       textAlign: "center",
