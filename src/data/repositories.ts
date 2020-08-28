@@ -6,7 +6,7 @@ export const data: Repositories[] = [
     website: "",
     language: "TypeScript",
     library: "React",
-    testing: "Jest",
+    testing: "Jest / Enzyme",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/3.png",
       "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/2.png",
