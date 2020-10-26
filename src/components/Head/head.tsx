@@ -33,7 +33,7 @@ const Head: React.FC<IHead> = (props) => {
               {text.text}
             </h1>
           </div>
-          <div ref={buttonRef}>
+          <div ref={buttonRef} className={classes.buttonContainer}>
             <Link
               className={classes.button}
               activeClass="repositories"
