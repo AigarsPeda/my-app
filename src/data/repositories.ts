@@ -1,5 +1,24 @@
 export const data: Repositories[] = [
   {
+    id: 14,
+    name: "social-media-app",
+    code: "https://github.com/AigarsPeda/social-media-app",
+    website: "",
+    language: "TypeScript",
+    library: "React",
+    testing: "",
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/2.png",
+      "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/1.png",
+      "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/3.png",
+      "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/4.png",
+      "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/5.png",
+      "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/6.png",
+      "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/7.png",
+      "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/8.png"
+    ]
+  },
+  {
     id: 13,
     name: "ticket-app",
     code: "https://github.com/AigarsPeda/ticket-app",
@@ -127,21 +146,21 @@ export const data: Repositories[] = [
   //     "https://raw.githubusercontent.com/AigarsPeda/calendar-app/master/screenshots/3.jpg"
   //   ]
   // },
-  {
-    id: 4,
-    name: "e-commerce",
-    code: "https://github.com/AigarsPeda/e-commerce",
-    website: "https://shop-crwn-live.herokuapp.com/",
-    language: "JavaScript",
-    library: "React",
-    testing: "",
-    images: [
-      "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/e-commerce.jpg",
-      "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot2.png",
-      "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot3.png",
-      "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot4.png"
-    ]
-  },
+  // {
+  //   id: 4,
+  //   name: "e-commerce",
+  //   code: "https://github.com/AigarsPeda/e-commerce",
+  //   website: "https://shop-crwn-live.herokuapp.com/",
+  //   language: "JavaScript",
+  //   library: "React",
+  //   testing: "",
+  //   images: [
+  //     "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/e-commerce.jpg",
+  //     "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot2.png",
+  //     "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot3.png",
+  //     "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot4.png"
+  //   ]
+  // },
   {
     id: 3,
     name: "face-detection-app",

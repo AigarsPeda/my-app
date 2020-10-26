@@ -25,7 +25,9 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     image: {
       width: "100%",
-      height: "auto",
+      // height: "auto",
+      height: "270px",
+      objectFit: "cover",
       borderTopRightRadius: "18px",
       borderTopLeftRadius: "18px",
       cursor: "pointer"
