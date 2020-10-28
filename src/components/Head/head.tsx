@@ -2,8 +2,6 @@ import React from "react";
 import { Grid, Container } from "@material-ui/core";
 import { useStyles } from "./headStyles";
 
-// import gsap from "gsap";
-
 import { Link } from "react-scroll";
 import { FaChevronDown } from "react-icons/fa";
 
