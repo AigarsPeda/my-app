@@ -9,6 +9,7 @@ type Repositories = {
   library: string;
   testing: string;
   images: Images;
+  backEnd: string;
 };
 
 type Images = string[];
@@ -85,6 +86,8 @@ type DataLanguage = {
   website: string;
   testing: string;
   noTest: string;
+  backEnd: string;
+  noBackEnd: string;
 };
 
 type ContactsLabel = {
