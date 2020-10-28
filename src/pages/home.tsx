@@ -22,7 +22,9 @@ const Home = () => {
     notDeployed: "",
     website: "",
     testing: "",
-    noTest: ""
+    noTest: "",
+    backEnd: "",
+    noBackEnd: ""
   });
   const [language, setLanguage] = useState("ENG");
   const [contacts, setContacts] = useState<Contacts>();
