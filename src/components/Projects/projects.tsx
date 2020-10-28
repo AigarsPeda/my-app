@@ -67,6 +67,7 @@ const Projects: React.FC<IProject> = (props) => {
                         }
                       />
                     </ListItem>
+
                     <ListItem>
                       <ListItemText
                         primary={
@@ -81,6 +82,25 @@ const Projects: React.FC<IProject> = (props) => {
                         secondary={
                           <Typography className={classes.secondaryText}>
                             {secondary.testing}
+                          </Typography>
+                        }
+                      />
+                    </ListItem>
+                    {/* TE */}
+                    <ListItem>
+                      <ListItemText
+                        primary={
+                          repo.backEnd.length ? (
+                            repo.backEnd
+                          ) : (
+                            <Typography className={classes.backupText}>
+                              {secondary.noBackEnd}
+                            </Typography>
+                          )
+                        }
+                        secondary={
+                          <Typography className={classes.secondaryText}>
+                            {secondary.backEnd}
                           </Typography>
                         }
                       />
