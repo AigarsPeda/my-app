@@ -7,6 +7,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
+    backEnd: "Node / Firebase",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/2.png",
       "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/1.png",
@@ -26,6 +27,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "Jest / Enzyme",
+    backEnd: "Node / MongoDB",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/3.png",
       "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/2.png",
@@ -41,6 +43,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/password-generator/master/screenshots/1.png",
       "https://raw.githubusercontent.com/AigarsPeda/password-generator/master/screenshots/2.png",
@@ -55,6 +58,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/volleyball-king/master/screenshots/1.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/volleyball-king/master/screenshots/5.jpg",
@@ -74,6 +78,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React Native",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/food-app/master/screenshots/1.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/food-app/master/screenshots/2.jpg"
@@ -87,6 +92,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg"
     ]
@@ -99,6 +105,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/3.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/1.jpg",
@@ -114,6 +121,7 @@ export const data: Repositories[] = [
     language: "JavaScript",
     library: "React",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/color-app.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot.png",
@@ -129,6 +137,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/todo-react-typescript/master/screenshots/todo-react-typescript.jpg"
     ]
@@ -169,6 +178,7 @@ export const data: Repositories[] = [
     language: "JavaScript",
     library: "React",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/face-detection-app.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/1.png",
@@ -184,6 +194,7 @@ export const data: Repositories[] = [
     language: "JavaScript",
     library: "",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/movies-website.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot2.png",
@@ -199,6 +210,7 @@ export const data: Repositories[] = [
     language: "JavaScript",
     library: "React",
     testing: "",
+    backEnd: "",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/dad-jokes-app.jpg",
       "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes.png",
@@ -216,7 +228,9 @@ export const dataText: DataText = {
     notDeployed: "Not Deployed",
     testing: "Test",
     noTest: "No Test",
-    website: "Website"
+    website: "Website",
+    backEnd: "Back End",
+    noBackEnd: "None"
   },
   lv: {
     language: "Valoda",
@@ -226,6 +240,8 @@ export const dataText: DataText = {
     notDeployed: "Nav Publicēta",
     testing: "Test",
     noTest: "Nav Testu",
-    website: "Vietne"
+    website: "Vietne",
+    backEnd: "Back End",
+    noBackEnd: "Nav"
   }
 };
