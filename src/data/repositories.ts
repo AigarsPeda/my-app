@@ -131,17 +131,31 @@ export const data: Repositories[] = [
   },
   {
     id: 6,
-    name: "todo-react-typescript",
-    code: "https://github.com/AigarsPeda/todo-react-typescript",
+    name: "pern-todo",
+    code: "https://github.com/AigarsPeda/pern-todo",
     website: "",
     language: "TypeScript",
     library: "React",
     testing: "",
-    backEnd: "",
+    backEnd: "Node / PostgreSQL ",
     images: [
-      "https://raw.githubusercontent.com/AigarsPeda/todo-react-typescript/master/screenshots/todo-react-typescript.jpg"
+      "https://raw.githubusercontent.com/AigarsPeda/pern-todo/main/screenshot/2.png",
+      "https://raw.githubusercontent.com/AigarsPeda/pern-todo/main/screenshot/1.png"
     ]
   },
+  // {
+  //   id: 6,
+  //   name: "todo-react-typescript",
+  //   code: "https://github.com/AigarsPeda/todo-react-typescript",
+  //   website: "",
+  //   language: "TypeScript",
+  //   library: "React",
+  //   testing: "",
+  //   backEnd: "",
+  //   images: [
+  //     "https://raw.githubusercontent.com/AigarsPeda/todo-react-typescript/master/screenshots/todo-react-typescript.jpg"
+  //   ]
+  // },
   // {
   //   id: 5,
   //   name: "calendar-app",
