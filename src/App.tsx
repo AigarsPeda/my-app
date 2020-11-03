@@ -39,9 +39,9 @@ const App: React.FC = () => {
       bgImageAlt="the cat"
       strength={1300}
       bgImageStyle={{
-        // width: "100%",
-        // height: "auto"
-        left: 0
+        width: "100%",
+        height: "auto"
+        // left: 0
       }}
     >
       <div className={classes.root}>
