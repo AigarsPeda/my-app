@@ -36,12 +36,11 @@ const App: React.FC = () => {
     <Parallax
       // blur={10}
       bgImage={require("./assets/svgBackgroundLong.svg")}
-      bgImageAlt="the cat"
+      bgImageAlt="background"
       strength={1300}
       bgImageStyle={{
         width: "100%",
         height: "auto"
-        // left: 0
       }}
     >
       <div className={classes.root}>
