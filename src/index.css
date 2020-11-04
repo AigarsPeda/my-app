@@ -24,8 +24,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #08062b;
   /* background-image: url(./assets/svgBackground.svg); */
-  background-repeat: round;
+  /* background-repeat: round; */
 }
+
+/* @media only screen and (max-width: 400px) {
+  body {
+    background-image: url("./assets/svgBackgroundLong.svg");
+    background-repeat: round;
+  }
+} */
 
 i {
   background: transparent;
