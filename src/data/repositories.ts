@@ -84,17 +84,30 @@ export const data: Repositories[] = [
       "https://raw.githubusercontent.com/AigarsPeda/food-app/master/screenshots/2.jpg"
     ]
   },
+  // {
+  //   id: 9,
+  //   name: "arc-dev-website",
+  //   code: "https://github.com/AigarsPeda/arc-dev-website",
+  //   website: "",
+  //   language: "TypeScript",
+  //   library: "React",
+  //   testing: "",
+  //   backEnd: "",
+  //   images: [
+  //     "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg"
+  //   ]
+  // },
   {
     id: 9,
-    name: "arc-dev-website",
-    code: "https://github.com/AigarsPeda/arc-dev-website",
+    name: "todo-laravel-vue-2",
+    code: "https://github.com/AigarsPeda/todo-laravel-vue-2",
     website: "",
-    language: "TypeScript",
-    library: "React",
+    language: "JavaScript",
+    library: "VUE",
     testing: "",
-    backEnd: "",
+    backEnd: "Laravel",
     images: [
-      "https://raw.githubusercontent.com/AigarsPeda/arc-dev-website/master/screenshots/1.jpg"
+      "https://raw.githubusercontent.com/AigarsPeda/todo-laravel-vue-2/master/screenshot/1.png"
     ]
   },
   {
@@ -184,22 +197,22 @@ export const data: Repositories[] = [
   //     "https://raw.githubusercontent.com/AigarsPeda/e-commerce/master/src/Screenshots/Screenshot4.png"
   //   ]
   // },
-  {
-    id: 3,
-    name: "face-detection-app",
-    code: "https://github.com/AigarsPeda/face-detection-app",
-    website: "https://aigars-face-detection.herokuapp.com/",
-    language: "JavaScript",
-    library: "React",
-    testing: "",
-    backEnd: "",
-    images: [
-      "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/face-detection-app.jpg",
-      "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/1.png",
-      "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/2.png",
-      "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/3.png"
-    ]
-  },
+  // {
+  //   id: 3,
+  //   name: "face-detection-app",
+  //   code: "https://github.com/AigarsPeda/face-detection-app",
+  //   website: "https://aigars-face-detection.herokuapp.com/",
+  //   language: "JavaScript",
+  //   library: "React",
+  //   testing: "",
+  //   backEnd: "",
+  //   images: [
+  //     "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/face-detection-app.jpg",
+  //     "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/1.png",
+  //     "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/2.png",
+  //     "https://raw.githubusercontent.com/AigarsPeda/face-detection-app/master/screen-shots/3.png"
+  //   ]
+  // },
   {
     id: 2,
     name: "movies-website",
@@ -215,22 +228,22 @@ export const data: Repositories[] = [
       "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot3.png",
       "https://raw.githubusercontent.com/AigarsPeda/movies-website/master/screenshots/Screenshot.png"
     ]
-  },
-  {
-    id: 1,
-    name: "dad-jokes-app",
-    code: "https://github.com/AigarsPeda/dad-jokes-app",
-    website: "https://aigarspeda.github.io/dad-jokes-app/",
-    language: "JavaScript",
-    library: "React",
-    testing: "",
-    backEnd: "",
-    images: [
-      "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/dad-jokes-app.jpg",
-      "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes.png",
-      "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes2.png"
-    ]
   }
+  // {
+  //   id: 1,
+  //   name: "dad-jokes-app",
+  //   code: "https://github.com/AigarsPeda/dad-jokes-app",
+  //   website: "https://aigarspeda.github.io/dad-jokes-app/",
+  //   language: "JavaScript",
+  //   library: "React",
+  //   testing: "",
+  //   backEnd: "",
+  //   images: [
+  //     "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/dad-jokes-app.jpg",
+  //     "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes.png",
+  //     "https://raw.githubusercontent.com/AigarsPeda/dad-jokes-app/master/screenshots/Dad_Jokes2.png"
+  //   ]
+  // }
 ];
 
 export const dataText: DataText = {
