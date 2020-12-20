@@ -107,7 +107,7 @@ export const data: Repositories[] = [
     testing: "",
     backEnd: "Laravel",
     images: [
-      "https://raw.githubusercontent.com/AigarsPeda/todo-laravel-vue-2/master/screenshot/1.png"
+      "https://raw.githubusercontent.com/AigarsPeda/todo-laravel-vue-2/master/web/screenshot/1.png"
     ]
   },
   {
