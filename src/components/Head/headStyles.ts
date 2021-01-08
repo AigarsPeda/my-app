@@ -77,7 +77,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       }
     },
     title: {
-      fontSize: "1.9rem"
+      fontSize: "2.3rem"
     },
     imageContainer: {
       // Tablet
