@@ -44,7 +44,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "Jest / Enzyme",
-    backEnd: "Node / Express / MongoDB",
+    backEnd: "Node / Koa / MongoDB",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/3.png",
       "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/2.png",
