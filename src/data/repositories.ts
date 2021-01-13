@@ -7,7 +7,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
-    backEnd: "Node / PostgreSQL ",
+    backEnd: "Node / Express / PostgreSQL ",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/todo-express-auth-react/main/web/screenshots/2.gif",
       "https://raw.githubusercontent.com/AigarsPeda/todo-express-auth-react/main/web/screenshots/3.gif",
@@ -24,7 +24,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
-    backEnd: "Node / Firebase",
+    backEnd: "Node / Express / Firebase",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/2.png",
       "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/1.png",
@@ -44,7 +44,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "Jest / Enzyme",
-    backEnd: "Node / MongoDB",
+    backEnd: "Node / Express / MongoDB",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/3.png",
       "https://raw.githubusercontent.com/AigarsPeda/ticket-app/master/screenshot/2.png",
@@ -167,7 +167,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
-    backEnd: "Node / PostgreSQL ",
+    backEnd: "Node / Express / PostgreSQL ",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/pern-todo/main/screenshot/2.png",
       "https://raw.githubusercontent.com/AigarsPeda/pern-todo/main/screenshot/1.png"
