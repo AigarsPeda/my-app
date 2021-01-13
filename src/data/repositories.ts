@@ -159,20 +159,20 @@ export const data: Repositories[] = [
       "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot4.png"
     ]
   },
-  {
-    id: 6,
-    name: "pern-todo",
-    code: "https://github.com/AigarsPeda/pern-todo",
-    website: "",
-    language: "TypeScript",
-    library: "React",
-    testing: "",
-    backEnd: "Node / Express / PostgreSQL ",
-    images: [
-      "https://raw.githubusercontent.com/AigarsPeda/pern-todo/main/screenshot/2.png",
-      "https://raw.githubusercontent.com/AigarsPeda/pern-todo/main/screenshot/1.png"
-    ]
-  },
+  // {
+  //   id: 6,
+  //   name: "pern-todo",
+  //   code: "https://github.com/AigarsPeda/pern-todo",
+  //   website: "",
+  //   language: "TypeScript",
+  //   library: "React",
+  //   testing: "",
+  //   backEnd: "Node / Express / PostgreSQL ",
+  //   images: [
+  //     "https://raw.githubusercontent.com/AigarsPeda/pern-todo/main/screenshot/2.png",
+  //     "https://raw.githubusercontent.com/AigarsPeda/pern-todo/main/screenshot/1.png"
+  //   ]
+  // },
   // {
   //   id: 6,
   //   name: "todo-react-typescript",
