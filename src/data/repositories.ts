@@ -7,7 +7,7 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
-    backEnd: "Node / Express / PostgreSQL ",
+    backEnd: "Node / Express / JWT / PostgreSQL ",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/todo-express-auth-react/main/web/screenshots/2.gif",
       "https://raw.githubusercontent.com/AigarsPeda/todo-express-auth-react/main/web/screenshots/3.gif",
