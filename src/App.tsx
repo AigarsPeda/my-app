@@ -44,7 +44,7 @@ const App: React.FC = () => {
       }}
     >
       <div className={classes.root}>
-        <Container style={{ padding: 0, overflow: "hidden" }}>
+        <Container style={{ overflow: "hidden" }}>
           <Home />
         </Container>
       </div>
