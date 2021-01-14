@@ -267,7 +267,7 @@ export const dataText: DataText = {
   eng: {
     language: "Language",
     none: "None",
-    library: "Library / Framework",
+    library: "Front End",
     code: "Code",
     notDeployed: "Not Deployed",
     testing: "Test",
@@ -279,7 +279,7 @@ export const dataText: DataText = {
   lv: {
     language: "Valoda",
     none: "Neviena",
-    library: "Bibliotēka",
+    library: "Front End",
     code: "Kods",
     notDeployed: "Nav Publicēta",
     testing: "Test",
