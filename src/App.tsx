@@ -24,14 +24,14 @@ const App: React.FC = () => {
   const classes = useStyles();
 
   useEffect(() => {
-    ReactGa.initialize("G-NJ00DES5ZB");
+    ReactGa.initialize("G-L4LX8P37QE");
 
     // to report page view
     ReactGa.pageview("/");
     ReactGa.pageview("/my-app/");
     ReactGa.pageview("my-app/");
   }, []);
-  // G-NJ00DES5ZB
+
   return (
     <Parallax
       // blur={10}
