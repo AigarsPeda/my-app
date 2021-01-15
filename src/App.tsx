@@ -28,6 +28,8 @@ const App: React.FC = () => {
 
     // to report page view
     ReactGa.pageview("/");
+    ReactGa.pageview("/my-app/");
+    ReactGa.pageview("my-app/");
   }, []);
   // G-NJ00DES5ZB
   return (
