@@ -56,11 +56,11 @@ const Home = () => {
   };
 
   useEffect(() => {
-    ReactGa.initialize("G-L4LX8P37QE");
+    ReactGa.initialize("G-8LZZVP0NER");
     // ReactGa.initialize("G-NJ00DES5ZB");
 
     // to report page view
-    // ReactGa.pageview("/");
+    ReactGa.pageview("/");
     ReactGa.pageview("/my-app/");
     ReactGa.pageview("my-app/");
     ReactGa.pageview(window.location.pathname);
