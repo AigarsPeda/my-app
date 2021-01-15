@@ -11,6 +11,8 @@ import Contacts from "../components/Contacts/contacts";
 import NavBar from "../components/Navbar/navbar";
 import ImageCarousel from "../components/Carousel/ImageCarousel";
 
+import ReactGa from "react-ga";
+
 const Home = () => {
   const [repositories, setRepositories] = useState<Repositories[]>();
   const [text, setText] = useState<Language>({ text: "", button: "" });
@@ -54,6 +56,15 @@ const Home = () => {
   };
 
   useEffect(() => {
+    ReactGa.initialize("G-L4LX8P37QE");
+    // ReactGa.initialize("G-NJ00DES5ZB");
+
+    // to report page view
+    // ReactGa.pageview("/");
+    ReactGa.pageview("/my-app/");
+    ReactGa.pageview("my-app/");
+    ReactGa.pageview(window.location.pathname);
+
     setRepositories(data);
     setContacts(contactsData);
 
