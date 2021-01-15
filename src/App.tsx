@@ -25,9 +25,10 @@ const App: React.FC = () => {
 
   useEffect(() => {
     ReactGa.initialize("G-L4LX8P37QE");
+    ReactGa.initialize("G-NJ00DES5ZB");
 
     // to report page view
-    ReactGa.pageview("/");
+    // ReactGa.pageview("/");
     ReactGa.pageview("/my-app/");
     ReactGa.pageview("my-app/");
   }, []);
