@@ -143,22 +143,22 @@ export const data: Repositories[] = [
   //     "https://raw.githubusercontent.com/AigarsPeda/wood/master/screenshots/4.jpg"
   //   ]
   // },
-  {
-    id: 7,
-    name: "color-app",
-    code: "https://github.com/AigarsPeda/color-app",
-    website: "https://color-select-app.herokuapp.com",
-    language: "JavaScript",
-    library: "React",
-    testing: "",
-    backEnd: "",
-    images: [
-      "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/color-app.jpg",
-      "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot.png",
-      "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot2.png",
-      "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot4.png"
-    ]
-  },
+  // {
+  //   id: 7,
+  //   name: "color-app",
+  //   code: "https://github.com/AigarsPeda/color-app",
+  //   website: "https://color-select-app.herokuapp.com",
+  //   language: "JavaScript",
+  //   library: "React",
+  //   testing: "",
+  //   backEnd: "",
+  //   images: [
+  //     "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/color-app.jpg",
+  //     "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot.png",
+  //     "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot2.png",
+  //     "https://raw.githubusercontent.com/AigarsPeda/color-app/master/screenshots/Screenshot4.png"
+  //   ]
+  // },
   // {
   //   id: 6,
   //   name: "pern-todo",
