@@ -1,12 +1,10 @@
+import { Container } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
+import { Parallax } from "react-parallax";
 import Home from "./pages/home";
 
-import { makeStyles } from "@material-ui/core/styles";
-
-import { Container } from "@material-ui/core";
-// import { useState } from "react";
-// import { useEffect } from "react";
-import { Parallax } from "react-parallax";
+import svgBackgroundLong from "./assets/svgBackgroundLong.svg";
 
 const useStyles = makeStyles({
   root: {
@@ -23,8 +21,7 @@ const App: React.FC = () => {
 
   return (
     <Parallax
-      // blur={10}
-      bgImage={require("./assets/svgBackgroundLong.svg")}
+      bgImage={svgBackgroundLong}
       bgImageAlt="background"
       strength={1300}
       bgImageStyle={{

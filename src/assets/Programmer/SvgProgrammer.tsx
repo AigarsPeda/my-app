@@ -217,15 +217,7 @@ function SvgProgrammer(props: React.SVGProps<SVGSVGElement>) {
         rx={20.739}
         ry={20.478}
       />
-      // leftEyebrows
-      <ellipse
-        // ref={leftEyebrows}
-        cx={1494.82}
-        cy={923.415}
-        fill="#34302d"
-        rx={12.205}
-        ry={13.8}
-      />
+      <ellipse cx={1494.82} cy={923.415} fill="#34302d" rx={12.205} ry={13.8} />
       <ellipse
         // ref={rightEyebrows}
         cx={1579.71}
