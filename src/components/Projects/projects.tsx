@@ -69,24 +69,21 @@ const Projects: React.FC<IProject> = (props) => {
                     </ListItem>
 
                     <ListItem>
-                      <ListItemText
-                        primary={
-                          repo.testing.length ? (
-                            repo.testing
-                          ) : (
-                            <Typography className={classes.backupText}>
-                              {secondary.noTest}
+                      <a
+                        href={repo.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ListItemText
+                          primary={repo.code}
+                          secondary={
+                            <Typography className={classes.secondaryText}>
+                              {secondary.code}
                             </Typography>
-                          )
-                        }
-                        secondary={
-                          <Typography className={classes.secondaryText}>
-                            {secondary.testing}
-                          </Typography>
-                        }
-                      />
+                          }
+                        />
+                      </a>
                     </ListItem>
-                    {/* TE */}
                     <ListItem>
                       <ListItemText
                         primary={
@@ -106,20 +103,22 @@ const Projects: React.FC<IProject> = (props) => {
                       />
                     </ListItem>
                     <ListItem>
-                      <a
-                        href={repo.code}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ListItemText
-                          primary={repo.code}
-                          secondary={
-                            <Typography className={classes.secondaryText}>
-                              {secondary.code}
+                      <ListItemText
+                        primary={
+                          repo.testing.length ? (
+                            repo.testing
+                          ) : (
+                            <Typography className={classes.backupText}>
+                              {secondary.noTest}
                             </Typography>
-                          }
-                        />
-                      </a>
+                          )
+                        }
+                        secondary={
+                          <Typography className={classes.secondaryText}>
+                            {secondary.testing}
+                          </Typography>
+                        }
+                      />
                     </ListItem>
                     <ListItem>
                       <a

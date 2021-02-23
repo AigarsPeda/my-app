@@ -1,5 +1,18 @@
 export const data: Repositories[] = [
   {
+    id: 16,
+    name: "bank-react-redux-router",
+    code: "https://github.com/AigarsPeda/bank-react-redux-router",
+    website: "",
+    language: "TypeScript",
+    library: "React",
+    testing: "",
+    backEnd: "https://github.com/AigarsPeda/bank-express-jwt-postgresql-api",
+    images: [
+      "https://raw.githubusercontent.com/AigarsPeda/bank-react-redux-router/main/screenshots/1.gif"
+    ]
+  },
+  {
     id: 15,
     name: "todo-express-auth-react",
     code: "https://github.com/AigarsPeda/todo-express-auth-react",
@@ -7,7 +20,8 @@ export const data: Repositories[] = [
     language: "TypeScript",
     library: "React",
     testing: "",
-    backEnd: "Node / Express / JWT / PostgreSQL ",
+    backEnd:
+      "https://github.com/AigarsPeda/todo-express-auth-react/tree/main/server",
     images: [
       "https://raw.githubusercontent.com/AigarsPeda/todo-express-auth-react/main/web/screenshots/2.gif",
       "https://raw.githubusercontent.com/AigarsPeda/todo-express-auth-react/main/web/screenshots/3.gif",
