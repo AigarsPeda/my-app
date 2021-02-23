@@ -1,11 +1,9 @@
+import { Container, Grid } from "@material-ui/core";
 import React from "react";
-import { Grid, Container } from "@material-ui/core";
-import { useStyles } from "./headStyles";
-
-import { Link } from "react-scroll";
 import { FaChevronDown } from "react-icons/fa";
-
+import { Link } from "react-scroll";
 import SvgProgrammer from "../../assets/Programmer/SvgProgrammer";
+import { useStyles } from "./headStyles";
 
 interface IHead {
   text: Language;

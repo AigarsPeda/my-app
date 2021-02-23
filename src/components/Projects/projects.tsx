@@ -1,10 +1,8 @@
-import React from "react";
-
-import { Grid, Container, Typography } from "@material-ui/core";
-import Paper from "@material-ui/core/Paper";
+import { Container, Grid, Typography } from "@material-ui/core";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-
+import Paper from "@material-ui/core/Paper";
+import React from "react";
 import { useStyles } from "./projectsStyles";
 
 interface IProject {

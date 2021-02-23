@@ -2,9 +2,8 @@ import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import { Parallax } from "react-parallax";
-import Home from "./pages/home";
-
 import svgBackgroundLong from "./assets/svgBackgroundLong.svg";
+import Home from "./pages/home";
 
 const useStyles = makeStyles({
   root: {

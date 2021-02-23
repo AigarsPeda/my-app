@@ -1,8 +1,7 @@
-import React from "react";
-import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
-
 import { Switch, Typography } from "@material-ui/core";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
+import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import React from "react";
 
 interface INavBar {
   changeLanguage: () => void;
