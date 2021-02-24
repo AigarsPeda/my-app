@@ -83,22 +83,28 @@ const Projects: React.FC<IProject> = (props) => {
                       </a>
                     </ListItem>
                     <ListItem>
-                      <ListItemText
-                        primary={
-                          repo.backEnd.length ? (
-                            repo.backEnd
-                          ) : (
-                            <Typography className={classes.backupText}>
-                              {secondary.noBackEnd}
+                      <a
+                        href={repo.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ListItemText
+                          primary={
+                            repo.backEnd.length ? (
+                              repo.backEnd
+                            ) : (
+                              <Typography className={classes.backupText}>
+                                {secondary.noBackEnd}
+                              </Typography>
+                            )
+                          }
+                          secondary={
+                            <Typography className={classes.secondaryText}>
+                              {secondary.backEnd}
                             </Typography>
-                          )
-                        }
-                        secondary={
-                          <Typography className={classes.secondaryText}>
-                            {secondary.backEnd}
-                          </Typography>
-                        }
-                      />
+                          }
+                        />
+                      </a>
                     </ListItem>
                     <ListItem>
                       <ListItemText
