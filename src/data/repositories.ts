@@ -9,7 +9,8 @@ export const data: Repositories[] = [
     testing: "",
     backEnd: "https://github.com/AigarsPeda/bank-express-jwt-postgresql-api",
     images: [
-      "https://raw.githubusercontent.com/AigarsPeda/bank-react-redux-router/main/screenshots/1.gif"
+      "https://raw.githubusercontent.com/AigarsPeda/bank-react-redux-router/main/screenshots/1.gif",
+      "https://raw.githubusercontent.com/AigarsPeda/bank-react-redux-router/main/screenshots/2.jpg"
     ]
   },
   {
