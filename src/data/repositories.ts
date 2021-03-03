@@ -16,7 +16,7 @@ export const data: Repositories[] = [
   {
     id: 15,
     name: "todo-express-auth-react",
-    code: "https://github.com/AigarsPeda/todo-express-auth-react",
+    code: "https://github.com/AigarsPeda/todo-express-auth-react/tree/main/web",
     website: "",
     language: "TypeScript",
     library: "React",
