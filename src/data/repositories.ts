@@ -41,6 +41,7 @@ export const data: Repositories[] = [
     testing: "",
     backEnd: "Node / Express / Firebase",
     images: [
+      "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/9.gif",
       "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/2.png",
       "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/1.png",
       "https://raw.githubusercontent.com/AigarsPeda/social-media-app/master/screenshot/3.png",
