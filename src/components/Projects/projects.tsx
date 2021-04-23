@@ -84,7 +84,7 @@ const Projects: React.FC<IProject> = (props) => {
                     </ListItem>
                     <ListItem>
                       <a
-                        href={repo.code}
+                        href={repo.backEnd}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
